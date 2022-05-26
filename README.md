@@ -36,6 +36,6 @@
 
 Настройка:
 
-В файле <i>ftp.js(gulp/config/ftp.js)</i> ввести все необходимые данные
+В файле ftp.js <i>(gulp/config/ftp.js)</i> ввести все необходимые данные
 
 Запуск -> <code>npm run deploy</code>
