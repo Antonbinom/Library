@@ -17,25 +17,25 @@
 
 ## Режим разработчика
 
- <code>Запуск -> npm run dev</code>
+ Запуск -> <code>npm run dev</code>
 
 ## Режим продакшна
 
 - Конвертация изображений в формат WEBP
 - Оптимизация Javascript и CSS файлов
 
-Запуск -> npm run build
+Запуск -> <code>npm run build</code>
 
 ## Создание архива
 
 Создание zip архива проекта
 
-Запуск -> npm run zip
+Запуск -> <code>npm run zip</code>
 
 ## Отправка и обновление файлов на ftp сервер
 
 Настройка:
 
-В файле ftp.js(gulp/config/ftp.js) ввести все необходимые данные
+В файле <i>ftp.js(gulp/config/ftp.js)</i> ввести все необходимые данные
 
-Запуск -> npm run deploy
+Запуск -> <code>npm run deploy</code>
