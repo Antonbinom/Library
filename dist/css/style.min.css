@@ -791,11 +791,11 @@ h1, h2, h3, h5, h6, p {
 }
 .slider-prev {
   left: 0;
-  background-image: url("/img/svg/slider-prev.svg");
+  background-image: url("./img/svg/slider-prev.svg");
 }
 .slider-next {
   right: 0;
-  background-image: url("/img/svg/slider-next.svg");
+  background-image: url("./img/svg/slider-next.svg");
 }
 .slider-dots {
   padding-top: 26px;
@@ -1018,7 +1018,7 @@ template {
   width: 37px;
   background: #0A6072;
   border-radius: 0px 6px 6px 0px;
-  background-image: url("/img/search.png");
+  background-image: url("./img/search.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 21px 20px;
@@ -1065,15 +1065,15 @@ template {
   display: none;
 }
 .header-search__btn {
-  background-image: url(/img/search.png);
+  background-image: url(./img/search.png);
   background-size: 21px 20px;
 }
 .header-question__btn {
-  background-image: url(/img/quest.png);
+  background-image: url(./img/quest.png);
 }
 .header-menu__btn {
   background-color: #C00000;
-  background-image: url(/img/burger.png);
+  background-image: url(./img/burger.png);
 }
 
 .mobile__search {
@@ -1392,11 +1392,11 @@ template {
 }
 .partners__slider-prev {
   left: 30px;
-  background-image: url("/img/svg/slider-prev2.svg");
+  background-image: url("./img/svg/slider-prev2.svg");
 }
 .partners__slider-next {
   right: 30px;
-  background-image: url("/img/svg/slider-next2.svg");
+  background-image: url("./img/svg/slider-next2.svg");
 }
 .partners__slide {
   display: flex;
