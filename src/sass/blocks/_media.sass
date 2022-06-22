@@ -3,6 +3,9 @@
 		&__slide
 			max-width: 896px
 			width: auto
+	.categories
+		&__item
+			width: 48.9%
 @media (max-width: 1200px)
 	.header__nav-item
 		font-size: 14px
@@ -10,6 +13,14 @@
 		padding-top: 50px
 		&__slider
 			margin-right: 30px
+	.categories
+		&__item
+			width: 48.7%
+	.partners
+		&__slider
+			margin: 0 80px
+		&__slide
+			justify-content: center
 @media (max-width: 991px)
 	.header
 		&__nav, &__search, &-btn
@@ -66,6 +77,12 @@
 			&-date
 				margin-right: 0
 				margin-bottom: 16px
+	.categories
+		&__item
+			margin-bottom: 20px
+			width: 48.5%
+			&:nth-child(odd)
+				margin-right: 20px
 @media (max-width: 768px)
 	.container
 		padding: 0 15px
@@ -89,6 +106,41 @@
 			&-image
 				width: 144px
 				height: 227px
+	.categories
+		&__wrapper
+			justify-content: center
+		&-title
+			margin-bottom: 12px
+		&__slide
+			&-info
+				padding: 14px 12px
+				min-height: max-content
+			&-title
+				margin-bottom: 6px
+				font-size: 14px
+				line-height: 140%
+			&-text
+				margin-bottom: 12px
+				font-size: 12px
+				line-height: 140%
+		&__item
+			padding: 12px
+			padding-top: 24px
+			margin-bottom: 20px
+			width: 100%
+			&:nth-child(odd)
+				margin-right: 0
+		&__date
+			top: 10px
+			left: 12px
+	.partners
+		&__slider
+			margin: 0
+		&__slide
+			height: 79px
+			justify-content: center
+			&-image
+				margin-right: 12px
 @media (max-width: 576px)
 	.footer
 		padding: 32px 0px
@@ -133,6 +185,7 @@
 		&-prev, &-next
 			width: 37px
 			height: 37px
+			background-size: 10px 16px
 		&-dots
 			& .swiper-pagination-bullet
 				width: 11px
@@ -142,3 +195,10 @@
 		&__slide
 			&-image
 				height: 180px
+	.categories
+		&__slider
+			&-prev, &-next
+				top: 20%
+		&__slide
+			&-image
+				height: 163px

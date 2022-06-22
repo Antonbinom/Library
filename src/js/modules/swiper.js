@@ -53,6 +53,37 @@ export const swipers = () => {
     },
   });
 
-  swiperEvents();
-  swiperNovelty();
+  const swiperCategories = new Swiper('.swiper.categories__slider', {
+    modules: [Navigation, Pagination],
+    loop: true,
+    navigation: {
+      nextEl: '.categories__slider-next',
+      prevEl: '.categories__slider-prev',
+    },
+    pagination: {
+      el: '.categories__slider-dots',
+    },
+  });
+  const swiperPartners = new Swiper('.swiper.partners__slider', {
+    modules: [Navigation, Pagination],
+    loop: true,
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      991: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+    navigation: {
+      nextEl: '.partners__slider-next',
+      prevEl: '.partners__slider-prev',
+    },
+  });
 };
