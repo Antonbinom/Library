@@ -1,0 +1,144 @@
+@media (max-width: 1400px)
+	.events
+		&__slide
+			max-width: 896px
+			width: auto
+@media (max-width: 1200px)
+	.header__nav-item
+		font-size: 14px
+	.events
+		padding-top: 50px
+		&__slider
+			margin-right: 30px
+@media (max-width: 991px)
+	.header
+		&__nav, &__search, &-btn
+			display: none
+		&__mobile
+			display: block
+		&__buttons
+			display: flex
+			&-search
+				& .active
+					display: block
+
+	.mobile
+		&__menu, &__search
+			&.active
+				display: block
+	.footer
+		&__wrapper
+			flex-wrap: wrap
+		&__banner
+			width: 100%
+			margin-top: 38px
+
+	.events
+		padding-top: 20px
+		padding-bottom: 35px
+		.container
+			padding: 0
+		&__wrapper
+			flex-direction: column
+			align-items: center
+		&__slider
+			width: 100%
+			margin-right: 0
+			margin-left: 0
+			margin-bottom: 70px
+			padding-bottom: 0
+		&__slide
+			max-width: none
+			&-description
+				padding: 0 30px
+		&__schedule
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			&-title
+				width: 100%
+				text-align: center
+			&-item
+				width: 50%
+				flex-direction: column
+				align-items: center
+				text-align: center
+			&-date
+				margin-right: 0
+				margin-bottom: 16px
+@media (max-width: 768px)
+	.container
+		padding: 0 15px
+	.header
+		&__top
+			padding: 22px 0
+		&-logo
+			width: 113px
+			height: 37px
+	.events
+		&__slide
+			&-description
+				padding: 0 15px
+	.novelty
+		&__slider
+			&-prev, &-next
+				top: 95px
+		&__slide
+			width: 144px
+			height: auto
+			&-image
+				width: 144px
+				height: 227px
+@media (max-width: 576px)
+	.footer
+		padding: 32px 0px
+		&__wrapper
+			flex-direction: column
+		&-title
+			margin-bottom: 18px
+		&__info
+			margin-bottom: 30px
+		&__contacts
+			&-info
+				margin-bottom: 30px
+		&-btn
+			margin-bottom: 30px
+		&__banner
+			text-align: center
+			&-wrapper
+				width: auto
+				padding: 44px 42px
+				margin-bottom: 10px
+	.events
+		&__slider
+			&-prev, &-next
+				transform: translateY(-160%)
+			&-prev
+				left: 23px
+			&-next
+				right: 23px
+		&__slide
+			&-image
+				margin-bottom: 10px
+			&-description
+				font-size: 11px
+				line-height: 140%
+		&__schedule
+			&-title
+				font-size: 24px
+				line-height: 29px
+			&-item
+				width: 100%
+	.slider
+		&-prev, &-next
+			width: 37px
+			height: 37px
+		&-dots
+			& .swiper-pagination-bullet
+				width: 11px
+				height: 11px
+@media (max-width: 360px)
+	.events
+		&__slide
+			&-image
+				height: 180px

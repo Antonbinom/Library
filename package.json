@@ -14,7 +14,8 @@
 	"author": "FLS",
 	"license": "ISC",
 	"dependencies": {
-		"gulp-cli": "^2.3.0"
+		"gulp-cli": "^2.3.0",
+		"slick-carousel": "^1.8.1"
 	},
 	"devDependencies": {
 		"browser-sync": "latest",
