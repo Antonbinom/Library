@@ -321,7 +321,7 @@ template {
 }
 
 /**
- * Swiper 8.1.5
+ * Swiper 8.2.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -329,7 +329,7 @@ template {
  *
  * Released under the MIT License
  *
- * Released on: May 16, 2022
+ * Released on: June 13, 2022
  */
 @font-face {
   font-family: swiper-icons;
@@ -541,6 +541,16 @@ template {
   pointer-events: none;
 }
 
+.swiper-button-next.swiper-button-hidden, .swiper-button-prev.swiper-button-hidden {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-navigation-disabled .swiper-button-next, .swiper-navigation-disabled .swiper-button-prev {
+  display: none !important;
+}
+
 .swiper-button-next:after, .swiper-button-prev:after {
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
@@ -582,6 +592,10 @@ template {
 
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
+}
+
+.swiper-pagination-disabled > .swiper-pagination, .swiper-pagination.swiper-pagination-disabled {
+  display: none !important;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
@@ -740,7 +754,11 @@ button.swiper-pagination-bullet {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.swiper-horizontal > .swiper-scrollbar {
+.swiper-scrollbar-disabled > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-disabled {
+  display: none !important;
+}
+
+.swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
   position: absolute;
   left: 1%;
   bottom: 3px;
@@ -749,7 +767,7 @@ button.swiper-pagination-bullet {
   width: 98%;
 }
 
-.swiper-vertical > .swiper-scrollbar {
+.swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical > .swiper-scrollbar {
   position: absolute;
   right: 3px;
   top: 1%;
@@ -1352,7 +1370,6 @@ button.swiper-pagination-bullet {
   .header__nav-item {
     font-size: 14px;
   }
-
   .events {
     padding-top: 50px;
   }
@@ -1373,11 +1390,9 @@ button.swiper-pagination-bullet {
   .header__buttons-search .active {
     display: block;
   }
-
   .mobile__menu.active, .mobile__search.active {
     display: block;
   }
-
   .footer__wrapper {
     flex-wrap: wrap;
   }
@@ -1385,7 +1400,6 @@ button.swiper-pagination-bullet {
     width: 100%;
     margin-top: 38px;
   }
-
   .events {
     padding-top: 20px;
     padding-bottom: 35px;
@@ -1434,7 +1448,6 @@ button.swiper-pagination-bullet {
   .container {
     padding: 0 15px;
   }
-
   .header__top {
     padding: 22px 0;
   }
@@ -1442,11 +1455,9 @@ button.swiper-pagination-bullet {
     width: 113px;
     height: 37px;
   }
-
   .events__slide-description {
     padding: 0 15px;
   }
-
   .novelty__slider-prev, .novelty__slider-next {
     top: 95px;
   }
@@ -1486,7 +1497,6 @@ button.swiper-pagination-bullet {
     padding: 44px 42px;
     margin-bottom: 10px;
   }
-
   .events__slider-prev, .events__slider-next {
     transform: translateY(-160%);
   }
@@ -1510,7 +1520,6 @@ button.swiper-pagination-bullet {
   .events__schedule-item {
     width: 100%;
   }
-
   .slider-prev, .slider-next {
     width: 37px;
     height: 37px;
