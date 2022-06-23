@@ -1,15 +1,20 @@
 .mobile
+	&__search, &__menu
+		max-height: 0
+		overflow: hidden
 	&__search
-		display: none
-		padding: 16px 0px
 		background-color: $gray
 		&-wrapper
 			position: relative
+		& .container
+			padding-top: 16px
+			padding-bottom: 16px
 	&__menu
-		display: none
-		padding: 24px 0px
 		width: 100%
 		background-color: $gray
+		& .container
+			padding-top: 24px
+			padding-bottom: 24px
 	&__nav
 		&-list
 			padding-left: 0
@@ -17,9 +22,6 @@
 			list-style-type: none
 	&__list
 		&-item
-			display: flex
-			align-items: center
-			justify-content: space-between
 			margin-bottom: 20px
 			font-weight: 600
 			font-size: 14px
@@ -27,3 +29,23 @@
 			& img
 				width: 10px
 				height: 6px
+				&.active
+					transform: rotate(180deg)
+		&-btn
+			display: flex
+			align-items: center
+			justify-content: space-between
+			width: 100%
+.mobile
+	&__sublist
+		width: 100%
+		// margin-top: 18px
+		padding-left: 16px
+		list-style-type: none
+		max-height: 0
+		overflow: hidden
+		&-item
+			margin-bottom: 10px
+			font-weight: 500
+			font-size: 14px
+			line-height: 17px

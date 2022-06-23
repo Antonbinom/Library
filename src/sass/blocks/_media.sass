@@ -22,7 +22,14 @@
 		&__slide
 			justify-content: center
 @media (max-width: 991px)
+	body
+		padding-top: 125px
 	.header
+		position: fixed
+		top: 0
+		width: 100%
+		background: #ffffff
+		z-index: 1000
 		&__nav, &__search, &-btn
 			display: none
 		&__mobile
@@ -37,6 +44,7 @@
 		&__menu, &__search
 			&.active
 				display: block
+
 	.footer
 		&__wrapper
 			flex-wrap: wrap
@@ -83,7 +91,19 @@
 			width: 48.5%
 			&:nth-child(odd)
 				margin-right: 20px
+	.mobile
+		&__search, &__menu
+			&.active
+				max-height: 100vh
+				transition: all ease-in 0.3s
+		&__sublist
+			&.active
+				max-height: 100vh
+				margin-top: 18px
+				transition: max-height ease-in 0.3s
 @media (max-width: 768px)
+	body
+		padding-top: 81px
 	.container
 		padding: 0 15px
 	.header

@@ -1,5 +1,5 @@
 <!-- HEADER START -->
-<header>
+<header class="header">
 	<div class="container">
 		<div class="header__top">
 			<a href="/" class="header-logo">
@@ -42,39 +42,7 @@
 		<!-- /.header__nav -->
 	</div>
 	<!-- /.container -->
-	<div class="mobile__search">
-		<div class="container">
-			<div class="mobile__search-wrapper">
-				<form action="#" class="header__search-form">
-					<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
-					<button type="submit" class="header__search-btn">
-					</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- /.mobile__search -->
-	<div class="mobile__menu">
-		<div class="container">
-			<nav class="mobile__nav">
-				<ul class="mobile__nav-list">
-					<li class="mobile__list-item"><a href="/">О системе</a><img src="./img/svg/arrow.svg" alt="Иконка: Стрелка">
-					</li>
-					<li class="mobile__list-item"><a href="/">Информационные ресурсы</a><img src="./img/svg/arrow.svg"
-							alt="Иконка: Стрелка">
-					</li>
-					<li class="mobile__list-item"><a href="/">Онлайн-сервисы</a><img src="./img/svg/arrow.svg"
-							alt="Иконка: Стрелка">
-					</li>
-					<li class="mobile__list-item"><a href="/">Услуги</a></li>
-					<li class="mobile__list-item"><a href="/">Афиша</a></li>
-					<li class="mobile__list-item"><a href="/">Новости</a></li>
-					<li class="mobile__list-item"><a href="/">Независимая оценка</a></li>
-				</ul>
-			</nav>
-		</div>
-		<!-- /.container -->
-	</div>
-	<!-- /.mobile__menu -->
+	@@include('./components/mobile-search.html',{})
+	@@include('./components/mobile-menu.html',{})
 </header>
 <!-- HEADER END -->

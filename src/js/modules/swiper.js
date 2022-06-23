@@ -67,6 +67,7 @@ export const swipers = () => {
   const swiperPartners = new Swiper('.swiper.partners__slider', {
     modules: [Navigation, Pagination],
     loop: true,
+    spaceBetween: 5,
     breakpoints: {
       576: {
         slidesPerView: 1,

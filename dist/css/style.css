@@ -1046,9 +1046,6 @@ template {
   padding: 16px 0px;
   background-color: #ECECEC;
 }
-.header__mobile .header__search {
-  width: 100%;
-}
 .header-mobile__btn {
   display: inline-flex;
   width: 37px;
@@ -1076,19 +1073,27 @@ template {
   background-image: url(../img/burger.png);
 }
 
+.mobile__search, .mobile__menu {
+  max-height: 0;
+  overflow: hidden;
+}
 .mobile__search {
-  display: none;
-  padding: 16px 0px;
   background-color: #ECECEC;
 }
 .mobile__search-wrapper {
   position: relative;
 }
+.mobile__search .container {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 .mobile__menu {
-  display: none;
-  padding: 24px 0px;
   width: 100%;
   background-color: #ECECEC;
+}
+.mobile__menu .container {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .mobile__nav-list {
   padding-left: 0;
@@ -1096,9 +1101,6 @@ template {
   list-style-type: none;
 }
 .mobile__list-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 14px;
@@ -1107,6 +1109,29 @@ template {
 .mobile__list-item img {
   width: 10px;
   height: 6px;
+}
+.mobile__list-item img.active {
+  transform: rotate(180deg);
+}
+.mobile__list-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile__sublist {
+  width: 100%;
+  padding-left: 16px;
+  list-style-type: none;
+  max-height: 0;
+  overflow: hidden;
+}
+.mobile__sublist-item {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
 }
 
 .events {
@@ -1562,6 +1587,16 @@ template {
   }
 }
 @media (max-width: 991px) {
+  body {
+    padding-top: 125px;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 1000;
+  }
   .header__nav, .header__search, .header-btn {
     display: none;
   }
@@ -1634,8 +1669,20 @@ template {
   .categories__item:nth-child(odd) {
     margin-right: 20px;
   }
+  .mobile__search.active, .mobile__menu.active {
+    max-height: 100vh;
+    transition: all ease-in 0.3s;
+  }
+  .mobile__sublist.active {
+    max-height: 100vh;
+    margin-top: 18px;
+    transition: max-height ease-in 0.3s;
+  }
 }
 @media (max-width: 768px) {
+  body {
+    padding-top: 81px;
+  }
   .container {
     padding: 0 15px;
   }
