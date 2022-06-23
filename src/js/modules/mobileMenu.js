@@ -7,21 +7,24 @@ export const mobileMenu = () => {
 
   const openMobileSubitem = e => {
     e.preventDefault();
-    mobileMenuItems.forEach(item => {
-      item.classList.remove('active');
-    });
     const mobileItem = e.target.closest('.mobile__list-item');
     const listBtn = mobileItem.querySelector('.mobile__list-btn');
     const sublist = mobileItem.querySelector('.mobile__sublist');
     const arrowBtn = listBtn.querySelector('img');
-    arrowBtn.classList.add('active');
-    sublist.classList.add('active');
-  };
 
+    arrowBtn.classList.toggle('active');
+    sublist.classList.toggle('active');
+  };
+  const closeMobileSubitem = () => {
+    mobileMenuItems.forEach(item => {
+      item.classList.remove('active');
+    });
+  };
   document.addEventListener('click', e => {
     if (e.target === btnMenu) {
       mobileSearch.classList.remove('active');
       mobileMenu.classList.toggle('active');
+      closeMobileSubitem();
     } else if (e.target === btnSearch) {
       mobileMenu.classList.remove('active');
       mobileSearch.classList.toggle('active');
