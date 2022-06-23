@@ -757,7 +757,7 @@ input::placeholder {
   opacity: 0.8;
 }
 
-h1, h2, h3, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0;
 }
@@ -824,11 +824,6 @@ main {
   display: block;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 hr {
   box-sizing: content-box;
   height: 0;
@@ -837,7 +832,6 @@ hr {
 
 pre {
   font-family: monospace, monospace;
-  font-size: 1em;
 }
 
 a {
@@ -859,7 +853,6 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
 }
 
 small {
@@ -1071,6 +1064,26 @@ template {
 .header-menu__btn {
   background-color: #C00000;
   background-image: url(../img/burger.png);
+}
+
+.breadcrumb {
+  padding: 30px 0;
+}
+.breadcrumb__list {
+  display: flex;
+  padding-left: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #686868;
+  list-style-type: none;
+}
+.breadcrumb-slash {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.breadcrumb-main {
+  text-decoration: underline;
 }
 
 .mobile__search, .mobile__menu {
@@ -1443,6 +1456,157 @@ template {
   text-transform: uppercase;
 }
 
+.review {
+  padding: 9px 0 42px;
+}
+.review-title {
+  margin: 0;
+  margin-bottom: 34px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #C00000;
+}
+.review__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.review__items {
+  display: flex;
+  flex-direction: column;
+  width: 35.7%;
+  margin-right: 24px;
+}
+.review-item {
+  margin-bottom: 10px;
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  background-color: #C00000;
+}
+.review-item:last-child {
+  margin-bottom: 0;
+}
+.review-image {
+  min-height: 100%;
+  width: 62.5%;
+}
+.review-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.exposition {
+  padding: 42px 0 84px;
+}
+.exposition-title {
+  margin-bottom: 34px;
+  text-align: center;
+}
+.exposition__slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
+  margin-bottom: 24px;
+}
+.exposition__slide-top {
+  margin-bottom: 24px;
+}
+.exposition__slide-image {
+  width: 100%;
+  height: 284px;
+  margin-bottom: 14px;
+}
+.exposition__slide-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.exposition__slide-name {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.exposition__slider-dots {
+  padding-top: 0;
+}
+
+.admin {
+  padding: 9px 0 84px;
+}
+.admin__main {
+  margin-bottom: 34px;
+  text-align: center;
+}
+.admin-title {
+  margin-bottom: 34px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #C00000;
+}
+.admin-fullname {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.admin__name, .admin__address, .admin__phone, .admin__mail {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 17px;
+}
+.admin-name {
+  margin-right: 3px;
+  font-weight: 500;
+}
+.admin-text {
+  font-weight: 400;
+}
+
+.admin__team {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 54px;
+  background: #ECECEC;
+}
+.admin__team-item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-bottom: 34px;
+  padding-left: 20px;
+  border-left: 3px solid #0A6072;
+}
+.admin__team-role {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.admin__team-name {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.admin__team .admin__phone {
+  margin-bottom: 8px;
+}
+.admin__team .admin__mail {
+  margin-bottom: 0;
+}
+
 .footer {
   padding: 46px 0;
   background-color: #ECECEC;
@@ -1750,6 +1914,55 @@ template {
   .partners__slide-image {
     margin-right: 12px;
   }
+  .review {
+    padding-top: 19px;
+    padding-bottom: 35px;
+  }
+  .review-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .review__wrapper {
+    flex-direction: column;
+  }
+  .review__items {
+    width: 100%;
+    order: 1;
+  }
+  .review-image {
+    width: 100%;
+    height: 328px;
+    margin-bottom: 20px;
+  }
+  .review-item {
+    padding: 14px 16px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .admin__team {
+    padding: 36px 24px;
+  }
+  .admin__team-item {
+    padding-left: 16px;
+    margin-bottom: 24px;
+  }
+  .admin__team-item:last-child {
+    margin-bottom: 0;
+  }
+  .admin__team-role {
+    margin-bottom: 6px;
+    font-size: 12px;
+  }
+  .admin__team-name {
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .admin__team .admin__phone, .admin__team .admin__mail {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 @media (max-width: 576px) {
   .footer {
@@ -1810,6 +2023,59 @@ template {
     width: 11px;
     height: 11px;
   }
+  .review-image {
+    height: 270px;
+  }
+  .exposition {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .exposition-title {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .exposition__slide {
+    margin-bottom: 22px;
+  }
+  .exposition__slide-top {
+    margin-bottom: 22px;
+  }
+  .exposition__slide-image {
+    height: auto;
+    margin-bottom: 12px;
+  }
+  .exposition__slide-name {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .admin {
+    padding: 19px 0 70px;
+  }
+  .admin-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .admin-fullname {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .admin__name, .admin__address, .admin__phone, .admin__mail {
+    margin-bottom: 6px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .admin__team .admin__phone, .admin__team .admin__mail {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .review-image {
+    height: 202px;
+  }
 }
 @media (max-width: 360px) {
   .events__slide-image {
@@ -1820,5 +2086,9 @@ template {
   }
   .categories__slide-image {
     height: 163px;
+  }
+  .exposition-title {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }

@@ -1,0 +1,57 @@
+.admin
+	padding: 9px 0 84px
+	&__main
+		margin-bottom: 34px
+		text-align: center
+	&-title
+		margin-bottom: 34px
+		font-weight: 600
+		font-size: 36px
+		line-height: 44px
+		color: $red
+	&-fullname
+		display: inline-block
+		margin-bottom: 20px
+		font-weight: 500
+		font-size: 16px
+		line-height: 20px
+		text-transform: uppercase
+	&__name, &__address, &__phone, &__mail
+		margin-bottom: 10px
+		font-size: 14px
+		line-height: 17px
+	&-name
+		margin-right: 3px
+		font-weight: 500
+	&-text
+		font-weight: 400
+
+.admin
+	&__team
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		padding: 54px
+		background: $gray
+		&-item
+			display: flex
+			flex-direction: column
+			width: 300px
+			margin-bottom: 34px
+			padding-left: 20px
+			border-left: 3px solid #0A6072
+		&-role
+			margin-bottom: 8px
+			font-weight: 500
+			font-size: 14px
+			line-height: 150%
+			text-transform: uppercase
+		&-name
+			margin-bottom: 16px
+			font-weight: 400
+			font-size: 14px
+			line-height: 17px
+		& .admin__phone
+			margin-bottom: 8px
+		& .admin__mail
+			margin-bottom: 0

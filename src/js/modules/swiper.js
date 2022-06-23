@@ -87,4 +87,24 @@ export const swipers = () => {
       prevEl: '.partners__slider-prev',
     },
   });
+
+  const swiperExposition = new Swiper('.swiper.exposition__slider', {
+    modules: [Navigation, Pagination],
+    loop: true,
+    autoplay: {
+      delay: 50,
+    },
+    spaceBetween: 24,
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      991: {
+        slidesPerView: 3,
+      },
+    },
+    pagination: {
+      el: '.exposition__slider-dots',
+    },
+  });
 };
