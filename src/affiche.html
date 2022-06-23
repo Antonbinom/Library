@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('html/head.html',{ "title":"Администрация" })
+@@include('html/head.html',{ "title":"Афиша" })
 
 <body>
 	@@include('html/header.html',{})
 
 	<body>
-		@@include('html/components/breadcrumb.html',{ "page":"Администрация" })
-		<main>
-			@@include('html/components/affiche.html',{})
+		@@include('html/components/breadcrumb.html',{ "page":"Афиша" })
+		<main class="affiche">
+			@@include('html/components/affiche-top.html',{})
+			@@include('html/components/affiche-content.html',{})
 		</main>
 		@@include('html/footer.html',{})
 		<script src="js/app.min.js"></script>

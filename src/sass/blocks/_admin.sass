@@ -4,11 +4,7 @@
 		margin-bottom: 34px
 		text-align: center
 	&-title
-		margin-bottom: 34px
-		font-weight: 600
-		font-size: 36px
-		line-height: 44px
-		color: $red
+		text-align: center
 	&-fullname
 		display: inline-block
 		margin-bottom: 20px
@@ -16,8 +12,9 @@
 		font-size: 16px
 		line-height: 20px
 		text-transform: uppercase
-	&__name, &__address, &__phone, &__mail
+	&__name, &__address, &__phone
 		margin-bottom: 10px
+	&__mail
 		font-size: 14px
 		line-height: 17px
 	&-name
@@ -28,18 +25,21 @@
 
 .admin
 	&__team
-		display: flex
-		justify-content: space-between
-		flex-wrap: wrap
-		padding: 54px
-		background: $gray
+		&-wrapper
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			padding: 54px
+			background: $gray
 		&-item
 			display: flex
 			flex-direction: column
-			width: 300px
+			width: 330px
 			margin-bottom: 34px
 			padding-left: 20px
 			border-left: 3px solid #0A6072
+			&:last-child
+				margin-bottom: 0
 		&-role
 			margin-bottom: 8px
 			font-weight: 500

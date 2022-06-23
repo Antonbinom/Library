@@ -1,0 +1,87 @@
+.affiche
+	&__tabs
+		padding-bottom: 42px
+		&-wrapper
+			display: flex
+			justify-content: space-between
+	&__content
+		padding: 42px 0px
+		&-wrapper
+			display: flex
+		&-image
+			position: relative
+			width: 49%
+			height: 432px
+			margin-right: 30px
+		&-age
+			display: flex
+			align-items: center
+			justify-content: center
+			position: absolute
+			bottom: 26px
+			right: 30px
+			width: 63px
+			height: 61px
+			background: #FFFFFF
+			border-radius: 4px
+			font-weight: 500
+			font-size: 26px
+			line-height: 32px
+			color: $blue
+		&-description
+			width: 49%
+			display: flex
+			flex-direction: column
+		&-title
+			margin-bottom: 34px
+			font-weight: 600
+			font-size: 26px
+			line-height: 130%
+			&.hidden
+				display: none
+		&-text
+			position: relative
+			padding-left: 20px
+			margin-bottom: 34px
+			font-weight: 400
+			font-size: 14px
+			line-height: 150%
+			&::before
+				content: ""
+				position: absolute
+				background-color: $blue
+				left: 0
+				top: 5%
+				bottom: 5%
+				width: 3px
+		&-date
+			& img
+				width: 18px
+				height: 20px
+				margin-right: 10px
+		&-time
+			& img
+				width: 17px
+				height: 17px
+				margin-right: 10px
+		&-place
+			&	img
+				width: 12px
+				height: 17px
+				margin-right: 12px
+				margin-left: 3px
+		&-price
+			& img
+				width: 21px
+				height: 21px
+				margin-right: 8px
+	&__info
+		&-item
+			display: flex
+			align-items: center
+			margin-bottom: 15px
+			font-weight: 400
+			font-size: 14px
+			line-height: 17px
+			&:last-child
+				margin-bottom: 0

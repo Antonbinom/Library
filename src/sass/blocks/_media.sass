@@ -21,6 +21,17 @@
 			margin: 0 80px
 		&__slide
 			justify-content: center
+	.admin
+		&__team
+			&-item
+				width: 300px
+	.affiche__tabs-wrapper
+		flex-wrap: wrap
+	.tabs__card
+		width: 48.7%
+		margin-bottom: 28px
+		&-image
+			height: 380px
 @media (max-width: 991px)
 	body
 		padding-top: 125px
@@ -101,6 +112,22 @@
 				max-height: 100vh
 				margin-top: 18px
 				transition: max-height ease-in 0.3s
+	.tabs__card-image
+		height: 300px
+	.affiche
+		&__tabs
+			padding-bottom: 14px
+		&__content
+			&-wrapper
+				flex-direction: column
+			&-image, &-description
+				width: 100%
+			&-image
+				margin-bottom: 28px
+			&-title
+				display: none
+				&.hidden
+					display: inline-block
 @media (max-width: 768px)
 	body
 		padding-top: 81px
@@ -164,9 +191,6 @@
 	.review
 		padding-top: 19px
 		padding-bottom: 35px
-		&-title
-			font-size: 30px
-			line-height: 37px
 		&__wrapper
 			flex-direction: column
 		&__items
@@ -183,7 +207,8 @@
 			line-height: 17px
 	.admin
 		&__team
-			padding: 36px 24px
+			&-wrapper
+				padding: 36px 24px
 			&-item
 				padding-left: 16px
 				margin-bottom: 24px
@@ -199,6 +224,66 @@
 			& .admin__phone, & .admin__mail
 				font-size: 12px
 				line-height: 15px
+	.title
+		font-size: 30px
+		line-height: 37px
+	.tabs
+		&__card
+			&-image
+				height: 260px
+			&-info
+				padding: 16px 20px
+			&-title
+				margin-bottom: 16px
+				line-height: 130%
+			&-date
+				margin-bottom: 12px
+				font-size: 12px
+				line-height: 15px
+				& img
+					width: 13px
+					height: 15px
+					margin-right: 8px
+			&-place
+				& img
+					margin-right: 10px
+					width: 10px
+					height: 15px
+	.affiche
+		&__content
+			&-image
+				height: 380px
+			&-title
+				margin-bottom: 32px
+				text-align: center
+				font-size: 24px
+				line-height: 29px
+			&-text
+				margin-bottom: 24px
+				font-size: 12px
+				line-height: 140%
+			&-date
+				& img
+					width: 13px
+					height: 15px
+			&-time
+				& img
+					width: 15px
+					height: 15px
+			&-gps
+				& img
+					width: 10px
+					height: 12px
+			&-price
+				& img
+					width: 17px
+					height: 17px
+		&__info
+			&-item
+				margin-bottom: 12px
+				font-size: 12px
+				line-height: 15px
+
 @media (max-width: 576px)
 	.footer
 		padding: 32px 0px
@@ -270,9 +355,6 @@
 				line-height: 17px
 	.admin
 		padding: 19px 0 70px
-		&-title
-			font-size: 30px
-			line-height: 37px
 		&-fullname
 			font-size: 16px
 			line-height: 20px
@@ -286,11 +368,41 @@
 			& .admin__phone, & .admin__mail
 				margin-right: 0
 				margin-left: 0
+	.tabs
+		&__card
+			width: 100%
+			margin-bottom: 24px
+			&:last-child
+				margin-bottom: 0
+			&-image
+				height: 240px
+	.affiche
+		&__tabs
+			padding-bottom: 50px
+		&__content
+			padding-top: 50px
+			&-image
+				height: 240px
 @media (max-width: 480px)
 	.review
 		&-image
 			height: 202px
-
+	.tabs
+		&__card
+			width: 100%
+			&-image
+				height: 209px
+	.affiche
+		&__content
+			&-image
+				height: 208px
+			&-age
+				width: 46px
+				height: 45px
+				bottom: 10px
+				right: 10px
+				font-size: 18px
+				line-height: 22px
 @media (max-width: 360px)
 	.events
 		&__slide
