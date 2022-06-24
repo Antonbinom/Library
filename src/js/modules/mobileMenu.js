@@ -24,9 +24,11 @@ export const mobileMenu = () => {
     if (e.target === btnMenu) {
       mobileSearch.classList.remove('active');
       mobileMenu.classList.toggle('active');
+      btnMenu.classList.toggle('active');
       closeMobileSubitem();
     } else if (e.target === btnSearch) {
       mobileMenu.classList.remove('active');
+      btnMenu.classList.remove('active');
       mobileSearch.classList.toggle('active');
     } else if (e.target.closest('.mobile__list-btn')) openMobileSubitem(e);
   });

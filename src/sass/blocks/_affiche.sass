@@ -1,9 +1,6 @@
 .affiche
 	&__tabs
 		padding-bottom: 42px
-		&-wrapper
-			display: flex
-			justify-content: space-between
 	&__content
 		padding: 42px 0px
 		&-wrapper
@@ -40,20 +37,10 @@
 			&.hidden
 				display: none
 		&-text
-			position: relative
-			padding-left: 20px
 			margin-bottom: 34px
 			font-weight: 400
 			font-size: 14px
 			line-height: 150%
-			&::before
-				content: ""
-				position: absolute
-				background-color: $blue
-				left: 0
-				top: 5%
-				bottom: 5%
-				width: 3px
 		&-date
 			& img
 				width: 18px
@@ -85,3 +72,17 @@
 			line-height: 17px
 			&:last-child
 				margin-bottom: 0
+.affiche
+	&__map
+		&-info
+			left: 30px
+
+.affiche
+	&__today
+		padding: 42px 0 84px
+		&-title
+			margin-bottom: 34px
+.tabs
+	&__wrapper
+		display: flex
+		justify-content: space-between
