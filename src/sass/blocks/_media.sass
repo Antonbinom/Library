@@ -167,9 +167,10 @@
 @media (max-width: 768px)
 	body
 		padding-top: 81px
-	h2
+	.section-title
 		margin-bottom: 32px
 		font-size: 24px
+		line-height: 29px
 	.container
 		padding: 0 15px
 	.header
@@ -186,16 +187,8 @@
 		&__slide
 			&-description
 				padding: 0 15px
-	.novelty
-		&__slider
-			&-prev, &-next
-				top: 95px
-		&__slide
-			width: 144px
-			height: auto
-			&-image
-				width: 144px
-				height: 227px
+	.books
+		padding: 35px 0px
 	.categories
 		&__wrapper
 			justify-content: center
@@ -269,6 +262,15 @@
 	.title
 		font-size: 30px
 		line-height: 37px
+	.set
+		&__list
+			&-item
+				font-size: 14px
+				&:before
+					width: 14px
+					height: 14px
+					top: 5px
+
 	.cards
 		padding: 35px 0px
 		&__item
@@ -290,8 +292,6 @@
 		&-title
 			margin-bottom: 32px
 			text-align: center
-			font-size: 24px
-			line-height: 29px
 		&-text
 			margin-bottom: 24px
 			font-size: 12px
@@ -348,6 +348,9 @@
 				margin-bottom: 14px
 				font-size: 12px
 				line-height: 15px
+	.books
+		&-title
+			margin-bottom: 32px
 	.libraries
 		& .cards
 			padding-top: 0
@@ -407,11 +410,18 @@
 				font-size: 11px
 				line-height: 140%
 		&__schedule
-			&-title
-				font-size: 24px
-				line-height: 29px
 			&-item
 				width: 100%
+	.books
+		&__slider
+			&-prev, &-next
+				top: 95px
+		&__slide
+			width: 144px
+			height: auto
+			&-image
+				width: 144px
+				height: 227px
 	.slider
 		&-prev, &-next
 			width: 37px
@@ -429,8 +439,6 @@
 		padding-bottom: 70px
 		&-title
 			margin-bottom: 32px
-			font-size: 24px
-			line-height: 29px
 		&__slide
 			margin-bottom: 22px
 			&-top
@@ -456,6 +464,9 @@
 			& .admin__phone, & .admin__mail
 				margin-right: 0
 				margin-left: 0
+	.books
+		&-title
+			text-align: center
 	.about
 		&__image
 			height: 270px

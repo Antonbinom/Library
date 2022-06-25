@@ -2,11 +2,10 @@
 
 <body>
 	@@include('html/header.html',{})
-	@@include('html/breadcrumb.html',{ "page":"Новости" })
 	<main class="single-news">
+		@@include('html/breadcrumb.html',{ "page":"Новости" })
 		@@include('html/title.html',{"title":"Масленица весела - всех на игры увела"
 		})
-
 		@@include('html/components/single-news/about.html',{})
 		@@include('html/components/single-news/map.html',{})
 		@@include('html/components/single-news/allnews.html',{})

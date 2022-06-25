@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20220625212652" />
+  <link rel="stylesheet" href="css/style.min.css" />
   <title>Афиша</title>
 </head>
 
@@ -14,8 +14,8 @@
 <header class="header">
 	<div class="container">
 		<div class="header__top">
-			<a href="main.html" class="header-logo">
-				<picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></picture></a>
+			<a href="index.html" class="header-logo">
+				<img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></a>
 			<div class="header__search">
 				<form action="#" class="header__search-form">
 					<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
@@ -33,7 +33,7 @@
 		<!-- /.header__top -->
 		<nav class="header__nav">
 			<ul class="header__nav-list">
-				<li class="header__nav-item"><a href="main.html">Главная</a>
+				<li class="header__nav-item"><a href="index.html">Главная</a>
 				</li>
 				<li class="header__nav-item"><a href="about.html">О системе</a>
 				</li>
@@ -171,21 +171,19 @@
 <!-- MOBILE-MENU END -->
 </header>
 <!-- HEADER END -->
-	<!-- BREADCRUMB START -->
+	<main class="affiche">
+		<!-- BREADCRUMB START -->
 <section class="breadcrumb">
 	<div class="container">
 		<ul class="breadcrumb__list">
-			<li class="breadcrumb__list-item breadcrumb-main"><a href="main.html">Главная</a></li>
-			<!-- <span class="breadcrumb-slash">/</span> -->
-			/
-			<li class="brea__list-item active">Афиша</li>
+			<li class="breadcrumb__list-item breadcrumb-main"><a href="index.html">Главная</a></li>
+			<li class="breadcrumb__list-item active">Афиша</li>
 		</ul>
 	</div>
 	<!-- /.container -->
 </section>
 
 <!-- BREADCRUMB END -->
-	<main class="affiche">
 		<div class="title-wrapper">
 	<div class="container">
 		<h1 class="title @@class">Афиша</h1>
@@ -197,7 +195,7 @@
 		<div class="cards__wrapper">
 			<div class="cards__item">
 				<div class="cards__item-image">
-					<picture><source srcset="./img/affiche/puppies.webp" type="image/webp"><img src="./img/affiche/puppies.png" alt="Фото: Куклы"></picture>
+					<img src="./img/affiche/puppies.png" alt="Фото: Куклы">
 				</div>
 				<div class="cards__item-info">
 					<h4 class="cards__item-title">
@@ -216,7 +214,7 @@
 			<!-- /.cards__item -->
 			<div class="cards__item">
 				<div class="cards__item-image">
-					<picture><source srcset="./img/affiche/man.webp" type="image/webp"><img src="./img/affiche/man.png" alt="Фото: Мужчиина"></picture>
+					<img src="./img/affiche/man.png" alt="Фото: Мужчиина">
 				</div>
 				<div class="cards__item-info">
 					<h4 class="cards__item-title">
@@ -235,7 +233,7 @@
 			<!-- /.cards__item -->
 			<div class="cards__item">
 				<div class="cards__item-image">
-					<picture><source srcset="./img/affiche/woman.webp" type="image/webp"><img src="./img/affiche/woman.png" alt="Фото: Женщина"></picture>
+					<img src="./img/affiche/woman.png" alt="Фото: Женщина">
 				</div>
 				<div class="cards__item-info">
 					<h4 class="cards__item-title">
@@ -254,7 +252,7 @@
 			<!-- /.cards__item -->
 			<div class="cards__item">
 				<div class="cards__item-image">
-					<picture><source srcset="./img/affiche/children.webp" type="image/webp"><img src="./img/affiche/children.png" alt="Фото: Дети"></picture>
+					<img src="./img/affiche/children.png" alt="Фото: Дети">
 				</div>
 				<div class="cards__item-info">
 					<h4 class="cards__item-title">
@@ -280,14 +278,14 @@
 <section class="affiche__about about">
 	<div class="container">
 		<div class="about__wrapper">
-			<h2 class="about-title hidden">Выставка «Путешествие в мир моды
+			<h2 class="section-title about-title hidden">Выставка «Путешествие в мир моды
 				с яснополянскими комодными куклами»</h2>
 			<div class="about__image">
-				<picture><source srcset="./img/affiche/puppiesBig.webp" type="image/webp"><img src="./img/affiche/puppiesBig.png" alt="Фото: Куклы"></picture>
+				<img src="./img/affiche/puppiesBig.png" alt="Фото: Куклы">
 				<span class="about-age">12+</span>
 			</div>
 			<div class="about__description">
-				<h2 class="about-title">Выставка «Путешествие в мир моды
+				<h2 class="section-title about-title">Выставка «Путешествие в мир моды
 					с яснополянскими комодными куклами»</h2>
 				<p class="about-text border-elem">
 					На предстоящей выставке «Путешествие в мир моды с яснополянскими куклами», посетители познакомятся с комодными
@@ -350,11 +348,11 @@
 		<!-- TODAY START -->
 <section class="affiche__today cards">
 	<div class="container">
-		<h2 class="cards-title">Мероприятия в этот день:</h2>
+		<h2 class="section-title cards-title">Мероприятия в этот день:</h2>
 		<div class="cards__wrapper">
 			<div class="cards__item">
 				<div class="cards__item-image">
-					<picture><source srcset="./img/affiche/man.webp" type="image/webp"><img src="./img/affiche/man.png" alt="Фото: Мужчиина"></picture>
+					<img src="./img/affiche/man.png" alt="Фото: Мужчиина">
 				</div>
 				<div class="cards__item-info">
 					<h4 class="cards__item-title">
@@ -373,7 +371,7 @@
 			<!-- /.cards__item -->
 			<div class="cards__item">
 				<div class="cards__item-image">
-					<picture><source srcset="./img/affiche/lecture.webp" type="image/webp"><img src="./img/affiche/lecture.png" alt="Фото: Лекция"></picture>
+					<img src="./img/affiche/lecture.png" alt="Фото: Лекция">
 				</div>
 				<div class="cards__item-info">
 					<h4 class="cards__item-title">
@@ -393,7 +391,7 @@
 			<!-- /.cards__item -->
 			<div class="cards__item">
 				<div class="cards__item-image">
-					<picture><source srcset="./img/affiche/eggs.webp" type="image/webp"><img src="./img/affiche/eggs.png" alt="Фото: Корзина с пасхальными яйцами"></picture>
+					<img src="./img/affiche/eggs.png" alt="Фото: Корзина с пасхальными яйцами">
 				</div>
 				<div class="cards__item-info">
 					<h4 class="cards__item-title">
@@ -412,7 +410,7 @@
 			<!-- /.cards__item -->
 			<div class="cards__item">
 				<div class="cards__item-image">
-					<picture><source srcset="./img/affiche/author.webp" type="image/webp"><img src="./img/affiche/author.png" alt="Фото: Чтец"></picture>
+					<img src="./img/affiche/author.png" alt="Фото: Чтец">
 				</div>
 				<div class="cards__item-info">
 					<h4 class="cards__item-title">
@@ -473,12 +471,12 @@
 				</div>
 				<a href="/" class="footer-btn link-btn">Задать вопрос</a>
 				<div class="footer__socials">
-					<a href="/" class="footer__socials-item"><picture><source srcset="./img/vk.webp" type="image/webp"><img src="./img/vk.png" alt="Иконка: VK"></picture></a>
+					<a href="/" class="footer__socials-item"><img src="./img/vk.png" alt="Иконка: VK"></a>
 					<a href="/" class="footer__socials-item">
-						<picture><source srcset="./img/teleg.webp" type="image/webp"><img src="./img/teleg.png" alt="Иконка: Telegram"></picture>
+						<img src="./img/teleg.png" alt="Иконка: Telegram">
 					</a>
 					<a href="/" class="footer__socials-item">
-						<picture><source srcset="img/youtube.webp" type="image/webp"><img src="img/youtube.png" alt="Иконка: Youtube"></picture>
+						<img src="img/youtube.png" alt="Иконка: Youtube">
 					</a>
 				</div>
 			</div>
@@ -496,8 +494,8 @@
 	<!-- /.container -->
 </footer>
 <!-- FOOTER END -->
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_v=20220625212652"></script>
-	<script src="js/app.min.js?_v=20220625212652"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+	<script src="js/app.min.js"></script>
 </body>
 
 </html>

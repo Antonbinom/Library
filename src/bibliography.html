@@ -1,0 +1,16 @@
+@@include('html/head.html',{ "title":"Библиография" })
+
+<body>
+	@@include('html/header.html',{})
+	<main class="projects">
+		@@include('html/breadcrumb.html',{ "page":"Библиография" })
+		@@include('html/title.html',{"title":"Библиография","class":"projects-title"})
+		@@include('html/components/bibliography/set.html',{})
+		@@include('html/components/bibliography/info-books.html',{})
+		@@include('html/components/bibliography/recommend-books.html',{})
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

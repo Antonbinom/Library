@@ -9,8 +9,12 @@
 		line-height: 15px
 		color: #686868
 		list-style-type: none
-	&-slash
-		margin-left: 6px
-		margin-right: 6px
+		&-item
+			&:not(:first-child)
+				&::before
+					content: "/"
+					margin-right: 6px
+					margin-left: 6px
+
 	&-main
 		text-decoration: underline
