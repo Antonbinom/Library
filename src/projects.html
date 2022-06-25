@@ -4,16 +4,14 @@
 
 <body>
 	@@include('html/header.html',{})
-
-	<body>
-		@@include('html/components/breadcrumb.html',{ "page":"Проекты" })
-		<main class="projects">
-			@@include('html/components/title.html',{"title":"Проекты"})
-			@@include('html/components/projects-slider.html',{})
-			@@include('html/components/projects-about.html',{})
-		</main>
-		@@include('html/footer.html',{})
-		<script src="js/app.min.js"></script>
-	</body>
+	@@include('html/breadcrumb.html',{ "page":"Проекты" })
+	<main class="projects">
+		@@include('html/title.html',{"title":"Проекты","class":"projects-title"})
+		@@include('html/components/projects/slider.html',{})
+		@@include('html/components/projects/about.html',{})
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
 
 </html>

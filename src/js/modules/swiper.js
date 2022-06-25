@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 
 export const swipers = () => {
   const swiperEvents = new Swiper('.swiper.events__slider', {
@@ -89,10 +89,10 @@ export const swipers = () => {
   });
 
   const swiperExposition = new Swiper('.swiper.exposition__slider', {
-    modules: [Navigation, Pagination],
+    modules: [Navigation, Pagination, Autoplay],
     loop: true,
     autoplay: {
-      delay: 50,
+      delay: 3000,
     },
     spaceBetween: 24,
     breakpoints: {
@@ -105,6 +105,16 @@ export const swipers = () => {
     },
     pagination: {
       el: '.exposition__slider-dots',
+    },
+  });
+  const swiperNews = new Swiper('.swiper.news__slider', {
+    modules: [Navigation, Pagination, Autoplay],
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    pagination: {
+      el: '.news__slider-dots',
     },
   });
 };

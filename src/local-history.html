@@ -4,16 +4,14 @@
 
 <body>
 	@@include('html/header.html',{})
-
-	<body>
-		@@include('html/components/breadcrumb.html',{ "page":"Краеведение" })
-		<main>
-			@@include('html/components/title.html',{"title":"Краеведение"})
-			@@include('html/components/review.html',{})
-			@@include('html/components/exposition.html',{})
-		</main>
-		@@include('html/footer.html',{})
-		<script src="js/app.min.js"></script>
-	</body>
+	@@include('html/breadcrumb.html',{ "page":"Краеведение" })
+	<main class="history">
+		@@include('html/title.html',{"title":"Краеведение"})
+		@@include('html/components/local-history/review.html',{})
+		@@include('html/components/local-history/exposition.html',{})
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
 
 </html>

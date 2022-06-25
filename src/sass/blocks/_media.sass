@@ -25,15 +25,18 @@
 		&__team
 			&-item
 				width: 300px
-	.tabs
+	.cards
 		&__wrapper
 			flex-wrap: wrap
-		&__card
+		&__item
 			width: 48.7%
 			margin-bottom: 28px
 		&-image
 			height: 380px
-
+	.complex
+		& .about
+			&__image
+				margin-top: 70px
 @media (max-width: 991px)
 	body
 		padding-top: 125px
@@ -57,6 +60,13 @@
 		&__menu, &__search
 			&.active
 				display: block
+				max-height: 100vh
+				transition: all ease-in 0.3s
+		&__sublist
+			&.active
+				max-height: 100vh
+				margin-top: 18px
+				transition: max-height ease-in 0.3s
 
 	.footer
 		&__wrapper
@@ -104,76 +114,61 @@
 			width: 48.5%
 			&:nth-child(odd)
 				margin-right: 20px
-	.mobile
-		&__search, &__menu
-			&.active
-				max-height: 100vh
-				transition: all ease-in 0.3s
-		&__sublist
-			&.active
-				max-height: 100vh
-				margin-top: 18px
-				transition: max-height ease-in 0.3s
-	.tabs__card-image
-		height: 300px
-	.affiche
-		&__tabs
-			padding-bottom: 14px
-		&__content
-			&-wrapper
-				flex-direction: column
-			&-image, &-description
-				width: 100%
+
+	.cards
+		&__item
 			&-image
-				margin-bottom: 28px
-			&-title
-				display: none
-				&.hidden
-					display: inline-block
-	.complex
-		&__about
-			&-image
-				height: 340px
-				margin-top: 70px
-	.complex, .projects
-		&__about
-			padding: 0 0 35px
-			&-wrapper
-				flex-direction: column
-			&-description
-				width: 100%
-			&-info
-				width: 100%
-			&-title
-				margin-bottom: 28px
-			&-image
-				width: 100%
-				height: 380px
-				margin-top: 0px
-				margin-bottom: 28px
-				order: -1
-			&-text
-				margin-bottom: 24px
-				font-size: 12px
-				line-height: 140%
-	.projects
-		& h1
-			margin-bottom: 8px
-		&__about
-			padding-bottom: 70px
-			&-title
-				display: none
+				height: 300px
+
+	.about
+		&__wrapper
+			flex-direction: column
+		&__image, &__description
+			width: 100%
+		&__image
+			height: 340px
+			margin-bottom: 28px
+		&-title
+			display: none
 			&.hidden
-				order: -2
-				display: block
-				margin-bottom: 32px
+				display: inline-block
 				text-align: center
-			&-description
+		&-subtitle
+			margin-bottom: 14px
+		&-event
+			text-align: center
+	.complex
+		& .title
+			margin-bottom: 34px
+		& .about
+			padding-top: 0
+			&__image
+				order: -1
 				margin-left: 0
+				margin-top: 0
+			&-title
+				text-align: left
+	.projects
+		&-title
+			margin-bottom: 8px
+		& .about
+			&__image,&__description
+				width: 100%
+			&__image
+				margin-right: 0
+	.news
+		&__about
+			padding-top: 0
+			& .about-title
+				margin-bottom: 24px
+	.libraries
+		& .cards__item
+			width: 49%
 @media (max-width: 768px)
 	body
 		padding-top: 81px
 	h2
+		margin-bottom: 32px
 		font-size: 24px
 	.container
 		padding: 0 15px
@@ -183,6 +178,8 @@
 		&-logo
 			width: 113px
 			height: 37px
+	.footer
+		margin-top: 65px
 	.breadcrumb
 		padding-bottom: 49px
 	.events
@@ -272,75 +269,66 @@
 	.title
 		font-size: 30px
 		line-height: 37px
-	.tabs
-		&__card
+	.cards
+		padding: 35px 0px
+		&__item
 			width: 100%
+			margin-bottom: 38px
+			&:last-child
+				margin-bottom: 0
 			&-image
-				height: 380px
+				height: 340px
 			&-info
-				padding: 16px 20px
+				padding: 16px 20px 0
 			&-title
 				margin-bottom: 16px
 				line-height: 130%
-			&-date
-				margin-bottom: 12px
-				font-size: 12px
-				line-height: 15px
+	.about
+		padding: 35px 0px
+		&__image
+			height: 340px
+		&-title
+			margin-bottom: 32px
+			text-align: center
+			font-size: 24px
+			line-height: 29px
+		&-text
+			margin-bottom: 24px
+			font-size: 12px
+			line-height: 140%
+	.info
+		&__item
+			margin-bottom: 12px
+			font-size: 12px
+			line-height: 15px
+			&.date
 				& img
 					width: 13px
 					height: 15px
-					margin-right: 8px
-			&-place
-				& img
-					margin-right: 10px
-					width: 10px
-					height: 15px
-	.affiche
-		&__content
-			&-image
-				height: 380px
-			&-title
-				margin-bottom: 32px
-				text-align: center
-				font-size: 24px
-				line-height: 29px
-			&-text
-				margin-bottom: 24px
-				font-size: 12px
-				line-height: 140%
-			&-date
-				& img
-					width: 13px
-					height: 15px
-			&-time
+			&.time
 				& img
 					width: 15px
 					height: 15px
-			&-gps
+			&.place
 				& img
 					width: 10px
-					height: 12px
-			&-price
+					height: 15px
+			&.price
 				& img
 					width: 17px
 					height: 17px
-		&__info
-			&-item
-				margin-bottom: 12px
-				font-size: 12px
-				line-height: 15px
-	.affiche
-		&__today
-			padding: 35px 0 70px
-		&__map
-			padding: 35px 0px
-	.tabs
-		&__wrapper
-			display: flex
-			flex-direction: column
-			height: auto
-		&__card:last-child
-			margin-bottom: 0
+			&.phone
+				& img
+					width: 13px
+					height: 13px
+			&.mail
+				& img
+					width: 14px
+					height: 11px
+			&.user
+				& img
+					width: 14px
+					height: 14px
 	.map
 		padding: 35px 0px
 		&__wrapper
@@ -353,88 +341,37 @@
 			order: 1
 			padding: 0
 			margin-top: 26px
-		&-title
-			margin-bottom: 14px
-			font-size: 14px
-		&-name
-			margin-bottom: 14px
-		& span
-			font-size: 12px
-			line-height: 15px
-		&-item:not(:last-child)
-			margin-bottom: 12px
-		&-place img
-			width: 10px
-			height: 15px
-		&-phone img
-			width: 13px
-			height: 13px
-		&-mail img
-			width: 14px
-			height: 11px
-	.complex
-		&__about
-			padding: 0 0 35px
-			&-wrapper
-				flex-direction: column
-			&-description
-				width: 100%
-			&-info
-				width: 100%
 			&-title
-				margin-bottom: 28px
-			&-image
-				width: 100%
-				height: 380px
-				margin-top: 0px
-				margin-bottom: 22px
-				order: -1
-			&-text
-				margin-bottom: 24px
+				margin-bottom: 14px
+				font-size: 14px
+			&-name
+				margin-bottom: 14px
 				font-size: 12px
-				line-height: 140%
-	.info__item
-		margin-bottom: 12px
-		font-size: 12px
-		line-height: 140%
-		& img
-			margin-right: 8px
-		&-time
-			& img
-				width: 15px
-				height: 15px
-		&-user
-			& img
-				width: 14px
-				height: 14px
-		&-phone
-			& img
-				width: 13px
-				height: 13px
-		&-mail
-			& img
-				width: 14px
-				height: 11px
-		&-place
-			& img
-				width: 10px
-				height: 15px
-	.complex
-		& .map
-			&__info
+				line-height: 15px
+	.libraries
+		& .cards
+			padding-top: 0
+			&__item
+				width: 49%
+				&:nth-child(-n+2)
+					margin-bottom: 38px
+				&-image
+					margin-bottom: 18px
 				&-title
-					margin-bottom: 14px
-				&-place
-					margin-top: 14px
-		&__info
-			&-social
-				margin-top: 14px
-		&__tabs
-			padding: 35px 0px
-	.projects
+					margin-bottom: 16px
+					line-height: 130%
+	.news
 		&__about
-			&-image
-				height: 380px
+			padding-top: 0
+			& .about
+				&-event
+					margin-bottom: 6px
+					font-size: 24px
+				&-title
+					margin-bottom: 18px
+		&__slider-dots
+			margin-bottom: 5px
+
 @media (max-width: 576px)
 	.footer
 		padding: 32px 0px
@@ -519,61 +456,56 @@
 			& .admin__phone, & .admin__mail
 				margin-right: 0
 				margin-left: 0
-	.tabs
-		&__card
-			width: 100%
-			margin-bottom: 24px
-			&:last-child
-				margin-bottom: 0
-	.affiche
-		&__tabs
-			padding-bottom: 50px
-		&__content
-			padding-top: 50px
-			&-image
-				height: 240px
+	.about
+		&__image
+			height: 270px
+		&-age
+			width: 46px
+			height: 45px
+			bottom: 10px
+			right: 10px
+			font-size: 18px
+			line-height: 22px
+	.cards__item
+		&-image
+			height: 270px
 	.map
 		&-window
-			height: 240px
-	.complex, .projects
-		&__about
-			&-image
-				height: 240px
+			height: 270px
+
 	.projects
-		&__tabs
-			padding-bottom: 35px
 		&__slide
 			&-image
-				height: 240px
+				height: 270px
 				margin-bottom: 12px
 			&-title
 				font-size: 14px
 				line-height: 17px
 		&__slider
 			&-dots
-				margin-top: 28px
+				margin-top: 26px
+	.libraries
+		& .cards__item
+			width: 100%
+			&-title
+				margin-bottom: 16px
+				line-height: 130%
 @media (max-width: 480px)
 	.review
 		&-image
 			height: 202px
-	.tabs
-		&__card
+	.about
+		&__image
+			height: 208px
+	.cards__item
+		&-image
+			height: 208px
+	.map
+		&-window
+			height: 210px
+	.libraries
+		& .cards__item
 			width: 100%
-			&-image
-				height: 209px
-	.affiche
-		&__content
-			&-image
-				height: 208px
-			&-age
-				width: 46px
-				height: 45px
-				bottom: 10px
-				right: 10px
-				font-size: 18px
-				line-height: 22px
-	.complex, .projects
-		&__about
 			&-image
 				height: 208px
 @media (max-width: 360px)
@@ -595,6 +527,3 @@
 		&-title
 			margin-left: 15px
 			margin-right: 15px
-	.map
-		&-window
-			height: 210px

@@ -3,16 +3,14 @@
 @@include('html/head.html',{ "title":"Администрация" })
 
 <body>
-	@@include('html/header.html',{})np
-
-	<body>
-		@@include('html/components/breadcrumb.html',{ "page":"Администрация" })
-		<main class="admin">
-			@@include('html/components/title.html',{"title":"Администрация", "class":"admin-title"})
-			@@include('html/components/admin.html',{})
-		</main>
-		@@include('html/footer.html',{})
-		<script src="js/app.min.js"></script>
-	</body>
+	@@include('html/header.html',{})
+	@@include('html/breadcrumb.html',{ "page":"Администрация" })
+	<main class="admin">
+		@@include('html/title.html',{"title":"Администрация", "class":"admin-title"})
+		@@include('html/components/admin.html',{})
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
 
 </html>

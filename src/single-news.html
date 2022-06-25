@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{ "title":"Новости" })
+
+<body>
+	@@include('html/header.html',{})
+	@@include('html/breadcrumb.html',{ "page":"Новости" })
+	<main class="single-news">
+		@@include('html/title.html',{"title":"Масленица весела - всех на игры увела"
+		})
+
+		@@include('html/components/single-news/about.html',{})
+		@@include('html/components/single-news/map.html',{})
+		@@include('html/components/single-news/allnews.html',{})
+
+	</main>
+	@@include('html/footer.html',{})
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
