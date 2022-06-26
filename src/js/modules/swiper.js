@@ -14,133 +14,17 @@ export const swipers = () => {
       prevEl: '.events__slider-prev',
     },
   });
-  // Слайдер на главной - категории
-  const swiperNovelty = new Swiper('.swiper.novelty__slider', {
-    modules: [Navigation, Pagination],
-    loop: true,
-    spaceBetween: 23,
-    breakpoints: {
-      360: {
-        slidesPerView: 2,
-      },
-      480: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      991: {
-        slidesPerView: 5,
-      },
-      1200: {
-        slidesPerView: 6,
-        spaceBetween: 0,
-      },
-      1460: {
-        slidesPerView: 7,
-      },
-    },
-    pagination: {
-      el: '.novelty__slider-dots',
-    },
 
-    navigation: {
-      nextEl: '.novelty__slider-next',
-      prevEl: '.novelty__slider-prev',
-    },
-  });
-  // Слайдер на главной - новинки
-  const swiperInfo = new Swiper('.swiper.info__slider', {
-    modules: [Navigation, Pagination],
-    loop: true,
-    spaceBetween: 23,
-    breakpoints: {
-      360: {
-        slidesPerView: 2,
-      },
-      480: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      991: {
-        slidesPerView: 5,
-      },
-      1200: {
-        slidesPerView: 6,
-        spaceBetween: 0,
-      },
-      1460: {
-        slidesPerView: 7,
-      },
-    },
-    pagination: {
-      el: '.info__slider-dots',
-    },
-
-    navigation: {
-      nextEl: '.info__slider-next',
-      prevEl: '.info__slider-prev',
-    },
-  });
-  // Библиография - информационные пособия
-  const swiperRecommend = new Swiper('.swiper.recommend__slider', {
-    modules: [Navigation, Pagination],
-    loop: true,
-    spaceBetween: 23,
-    breakpoints: {
-      360: {
-        slidesPerView: 2,
-      },
-      480: {
-        slidesPerView: 2,
-      },
-      576: {
-        slidesPerView: 3,
-        spaceBetween: 10,
-      },
-      768: {
-        slidesPerView: 4,
-      },
-      991: {
-        slidesPerView: 5,
-      },
-      1200: {
-        slidesPerView: 6,
-        spaceBetween: 0,
-      },
-      1460: {
-        slidesPerView: 7,
-      },
-    },
-    pagination: {
-      el: '.recommend__slider-dots',
-    },
-
-    navigation: {
-      nextEl: '.recommend__slider-next',
-      prevEl: '.recommend__slider-prev',
-    },
-  });
-  // Библиография - рекомендательные пособия
+  // Слайдеры на главной - категории
   const swiperCategories = new Swiper('.swiper.categories__slider', {
     modules: [Navigation, Pagination],
     loop: true,
+    pagination: {
+      el: '.categories__slider-dots',
+    },
     navigation: {
       nextEl: '.categories__slider-next',
       prevEl: '.categories__slider-prev',
-    },
-    pagination: {
-      el: '.categories__slider-dots',
     },
   });
   // Слайдер на главной - партнеры
@@ -199,3 +83,52 @@ export const swipers = () => {
     },
   });
 };
+
+// Слайдер с книгами
+const booksSlider = slider => {
+  const swiper = new Swiper(`.swiper.${slider}__slider`, {
+    modules: [Navigation, Pagination],
+    loop: true,
+    spaceBetween: 23,
+    breakpoints: {
+      360: {
+        slidesPerView: 2,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+      },
+      991: {
+        slidesPerView: 5,
+      },
+      1200: {
+        slidesPerView: 6,
+        spaceBetween: 0,
+      },
+      1460: {
+        slidesPerView: 7,
+      },
+    },
+    pagination: {
+      el: `.${slider}__slider-dots`,
+    },
+
+    navigation: {
+      nextEl: `.${slider}__slider-next`,
+      prevEl: `.${slider}__slider-prev`,
+    },
+  });
+};
+
+// Слайдер с книгами - Главная - новинки
+booksSlider('novelty');
+// Слайдер с книгами - Библиография - информационные пособия
+booksSlider('info');
+//  Слайдер с книгами - Библиография - рекомендательные пособия
+booksSlider('recommend');

@@ -1,14 +1,18 @@
 export const maps = () => {
   const removeDefoultMarkers = (map, geo) => {
-    let placemark = new ymaps.Placemark(geo, {}, {});
-
-    map.controls.remove('geolocationControl');
-    map.controls.remove('searchControl');
-    map.controls.remove('trafficControl');
-    map.controls.remove('typeSelector');
-    map.controls.remove('fullscreenControl');
-    map.controls.remove('zoomControl');
-    map.controls.remove('rulerControl');
+    const placemark = new ymaps.Placemark(geo, {}, {});
+    const mapControls = [
+      'geolocationControl',
+      'fullscreenControl',
+      'zoomControl',
+      'rulerControl',
+      'searchControl',
+      'trafficControl',
+      'typeSelector',
+      'fullscreenControl',
+      'zoomControl',
+    ];
+    mapControls.forEach(item => map.controls.remove(item));
     map.behaviors.disable(['scrollZoom']);
     map.geoObjects.add(placemark);
   };
