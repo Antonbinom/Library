@@ -42,7 +42,8 @@ input
 h1, h2, h3, h4 ,h5, h6, p, ul
 	padding: 0
 	margin: 0
-
+ul
+	list-style-type: none
 .container
 	max-width: 1460px
 	padding: 0 30px
@@ -102,3 +103,15 @@ h2
 .border-elem
 	padding-left: 20px
 	border-left: 3px solid $blue
+	font-weight: 400
+	font-size: 14px
+	line-height: 150%
+
+	&.text-header
+		margin-bottom: 32px
+		& p:not(:last-child)
+			margin-bottom: 25px
+			padding-right: 2px
+		& b
+			display: inline-block
+			margin-bottom: 25px

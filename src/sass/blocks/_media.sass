@@ -16,7 +16,7 @@
 	.categories
 		&__item
 			width: 48.7%
-	.partners
+	.brands
 		&__slider
 			margin: 0 80px
 		&__slide
@@ -159,7 +159,7 @@
 				width: 100%
 			&__image
 				margin-right: 0
-	.news
+	.post
 		&__about
 			padding-top: 0
 			& .about-title
@@ -219,7 +219,7 @@
 		&__date
 			top: 10px
 			left: 12px
-	.partners
+	.brands
 		&__slider
 			margin: 0
 		&__slide
@@ -266,6 +266,7 @@
 		font-size: 30px
 		line-height: 37px
 	.set
+		padding: 20px 0px
 		&__list
 			&-item
 				font-size: 14px
@@ -273,7 +274,6 @@
 					width: 14px
 					height: 14px
 					top: 5px
-
 	.cards
 		padding: 35px 0px
 		&__item
@@ -366,7 +366,7 @@
 				&-title
 					margin-bottom: 16px
 					line-height: 130%
-	.news
+	.post
 		&__about
 			padding-top: 0
 			& .about
@@ -377,8 +377,38 @@
 					margin-bottom: 18px
 		&__slider-dots
 			margin-bottom: 5px
-
+	.border-elem
+		&.text-header
+			font-size: 12px
+			line-height: 140%
+			& p:not(:last-child)
+				margin-bottom: 15px
+				font-size: 12px
+				line-height: 140%
+			& b
+				margin-bottom: 15px
+				font-size: 12px
+				line-height: 140%
+	.media
+		&__tabs
+			padding: 0px 0px 16px
+			&-month
+				margin: 10px 0px
+		&__content
+			&-item
+				font-size: 14px
+	.tabs
+		&__year
+			&-btn
+				height: 40px
+				margin-right: 22px
+				margin-bottom: 22px
+				font-size: 16px
+		&__month
+			&-btn
+				font-size: 14px
 @media (max-width: 576px)
+
 	.footer
 		padding: 32px 0px
 		&__wrapper

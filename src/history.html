@@ -4,9 +4,9 @@
 	@@include('html/header.html',{})
 	<main class="history">
 		@@include('html/breadcrumb.html',{ "page":"Краеведение" })
-		@@include('html/title.html',{"title":"Краеведение"})
-		@@include('html/components/local-history/review.html',{})
-		@@include('html/components/local-history/exposition.html',{})
+		@@include('html/title.html',{"title":"Краеведение"}, "class":"history-title")
+		@@include('html/components/history/review.html',{})
+		@@include('html/components/history/exposition.html',{})
 	</main>
 	@@include('html/footer.html',{})
 	<script src="js/app.min.js"></script>

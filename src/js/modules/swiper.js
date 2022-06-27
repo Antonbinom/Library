@@ -28,7 +28,7 @@ export const swipers = () => {
     },
   });
   // Слайдер на главной - партнеры
-  const swiperPartners = new Swiper('.swiper.partners__slider', {
+  const swiperBrands = new Swiper('.swiper.brands__slider', {
     modules: [Navigation, Pagination],
     loop: true,
     spaceBetween: 5,
@@ -47,8 +47,8 @@ export const swipers = () => {
       },
     },
     navigation: {
-      nextEl: '.partners__slider-next',
-      prevEl: '.partners__slider-prev',
+      nextEl: '.brands__slider-next',
+      prevEl: '.brands__slider-prev',
     },
   });
   // Краеведение - виртуальные выставки, проекты
@@ -72,14 +72,14 @@ export const swipers = () => {
     },
   });
   // Новости -> новость
-  const swiperNews = new Swiper('.swiper.news__slider', {
+  const swiperPost = new Swiper('.swiper.post__slider', {
     modules: [Navigation, Pagination, Autoplay],
     loop: true,
     autoplay: {
       delay: 3000,
     },
     pagination: {
-      el: '.news__slider-dots',
+      el: '.post__slider-dots',
     },
   });
 };

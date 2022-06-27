@@ -761,6 +761,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   max-width: 1460px;
   padding: 0 30px;
@@ -832,6 +836,20 @@ h2 {
 .border-elem {
   padding-left: 20px;
   border-left: 3px solid #0A6072;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+.border-elem.text-header {
+  margin-bottom: 32px;
+}
+.border-elem.text-header p:not(:last-child) {
+  margin-bottom: 25px;
+  padding-right: 2px;
+}
+.border-elem.text-header b {
+  display: inline-block;
+  margin-bottom: 25px;
 }
 
 html {
@@ -1203,6 +1221,9 @@ template {
   width: 16px;
   height: 16px;
   background: #0A6072;
+}
+.set__list-item a {
+  color: #0092B5;
 }
 
 .books {
@@ -1654,44 +1675,44 @@ template {
   background-color: #870066;
 }
 
-.partners {
+.brands {
   padding: 65px 0 103px;
 }
-.partners .container {
+.brands .container {
   position: relative;
 }
-.partners__slider {
+.brands__slider {
   display: flex;
   justify-content: space-between;
   margin-left: 123px;
   margin-right: 123px;
 }
-.partners__slider-prev, .partners__slider-next {
+.brands__slider-prev, .brands__slider-next {
   background-color: #ECECEC;
   transform: translateY(-50%);
 }
-.partners__slider-prev {
+.brands__slider-prev {
   left: 30px;
   background-image: url("../img/svg/slider-prev2.svg");
 }
-.partners__slider-next {
+.brands__slider-next {
   right: 30px;
   background-image: url("../img/svg/slider-next2.svg");
 }
-.partners__slide {
+.brands__slide {
   display: flex;
   align-items: center;
   height: 93px;
 }
-.partners__slide-image {
+.brands__slide-image {
   margin-right: 18px;
 }
-.partners__slide img {
+.brands__slide img {
   width: auto;
   height: auto;
   object-fit: cover;
 }
-.partners__slide-name {
+.brands__slide-name {
   font-weight: 400;
   font-size: 12px;
   line-height: 150%;
@@ -1924,36 +1945,36 @@ template {
   margin-top: 24px;
 }
 
-.news__slider {
+.post__slider {
   height: 100%;
 }
-.news__slider-dots {
+.post__slider-dots {
   position: absolute;
   margin-bottom: 11px;
   z-index: 100;
 }
-.news__slider-dots .swiper-pagination-bullet {
+.post__slider-dots .swiper-pagination-bullet {
   background: #ffffff;
   opacity: 1;
 }
-.news__slider-dots .swiper-pagination-bullet-active {
+.post__slider-dots .swiper-pagination-bullet-active {
   border: 1px solid #ffffff;
   background: rgba(153, 153, 153, 0);
 }
-.news__map .map__info {
+.post__map .map__info {
   left: 30px;
 }
 
-.single-news .news-link {
+.post .post-link {
   margin-top: 6px;
   padding-bottom: 42px;
 }
-.single-news .news-link img {
+.post .post-link img {
   width: 16px;
   height: 10px;
   margin-right: 12px;
 }
-.single-news .news-link span {
+.post .post-link span {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -1992,6 +2013,73 @@ template {
 
 .bibliography__set {
   padding-top: 0;
+}
+
+.partners .set-title, .services .set-title, .media .set-title {
+  margin-bottom: 31px;
+}
+.partners .set:last-child, .services .set:last-child, .media .set:last-child {
+  padding-bottom: 42px;
+}
+
+.media {
+  padding-bottom: 42px;
+}
+.media__tabs {
+  padding: 32px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.media__tabs-year {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin-bottom: 0;
+}
+.media__tabs-month {
+  margin: 12px 0;
+}
+.media__content-title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+.media__content-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0092B5;
+}
+.media__content-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.tabs__year-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 43px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #ffffff;
+  background: #C00000;
+}
+.tabs__month-btn {
+  padding: 0;
+  background: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0092B5;
+}
+.tabs__month-btn:not(:last-child) {
+  margin-right: 42px;
 }
 
 .footer {
@@ -2110,10 +2198,10 @@ template {
   .categories__item {
     width: 48.7%;
   }
-  .partners__slider {
+  .brands__slider {
     margin: 0 80px;
   }
-  .partners__slide {
+  .brands__slide {
     justify-content: center;
   }
   .admin__team-item {
@@ -2276,10 +2364,10 @@ template {
   .projects .about__image {
     margin-right: 0;
   }
-  .news__about {
+  .post__about {
     padding-top: 0;
   }
-  .news__about .about-title {
+  .post__about .about-title {
     margin-bottom: 24px;
   }
   .libraries .cards__item {
@@ -2350,14 +2438,14 @@ template {
     top: 10px;
     left: 12px;
   }
-  .partners__slider {
+  .brands__slider {
     margin: 0;
   }
-  .partners__slide {
+  .brands__slide {
     height: 79px;
     justify-content: center;
   }
-  .partners__slide-image {
+  .brands__slide-image {
     margin-right: 12px;
   }
   .review {
@@ -2407,6 +2495,9 @@ template {
   .title {
     font-size: 30px;
     line-height: 37px;
+  }
+  .set {
+    padding: 20px 0px;
   }
   .set__list-item {
     font-size: 14px;
@@ -2528,18 +2619,50 @@ template {
     margin-bottom: 16px;
     line-height: 130%;
   }
-  .news__about {
+  .post__about {
     padding-top: 0;
   }
-  .news__about .about-event {
+  .post__about .about-event {
     margin-bottom: 6px;
     font-size: 24px;
   }
-  .news__about .about-title {
+  .post__about .about-title {
     margin-bottom: 18px;
   }
-  .news__slider-dots {
+  .post__slider-dots {
     margin-bottom: 5px;
+  }
+  .border-elem.text-header {
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .border-elem.text-header p:not(:last-child) {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .border-elem.text-header b {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 140%;
+  }
+  .media__tabs {
+    padding: 0px 0px 16px;
+  }
+  .media__tabs-month {
+    margin: 10px 0px;
+  }
+  .media__content-item {
+    font-size: 14px;
+  }
+  .tabs__year-btn {
+    height: 40px;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    font-size: 16px;
+  }
+  .tabs__month-btn {
+    font-size: 14px;
   }
 }
 @media (max-width: 576px) {

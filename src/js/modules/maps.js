@@ -35,9 +35,9 @@ export const maps = () => {
     removeDefoultMarkers(map, geo);
   }
 
-  function newsMap() {
+  function postMap() {
     const geo = [54.168288, 37.585503];
-    let map = new ymaps.Map('news-map', {
+    let map = new ymaps.Map('post-map', {
       center: geo, // ваши данные
       zoom: 18,
     });
@@ -46,5 +46,5 @@ export const maps = () => {
 
   ymaps.ready(afficheMap);
   ymaps.ready(complexMap);
-  ymaps.ready(newsMap);
+  ymaps.ready(postMap);
 };
