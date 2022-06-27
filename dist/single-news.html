@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex">
   <link rel="stylesheet" href="css/style.min.css" />
   <title>Новости</title>
 </head>
@@ -17,7 +18,7 @@
 			<a href="index.html" class="header-logo">
 				<img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></a>
 			<div class="header__search">
-				<form action="#" class="header__search-form">
+				<form action="#" class="header__search">
 					<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
 					<button type="submit" class="header__search-btn">
 					</button>
@@ -57,123 +58,119 @@
 	<!-- /.MOBILE-SEARCH START-->
 <div class="mobile__search">
 	<div class="container">
-		<div class="mobile__search-wrapper">
-			<form action="#" class="header__search-form">
-				<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
-				<button type="submit" class="header__search-btn">
-				</button>
-			</form>
-		</div>
+		<form action="#" class="header__search header__search--hidden">
+			<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
+			<button type="submit" class="header__search-btn">
+			</button>
+		</form>
 	</div>
 </div>
 <!-- /.MOBILE-SEARCH END-->
 	<!-- MOBILE-MENU START -->
-<div class="mobile__menu">
+<nav class="mobile__menu">
 	<div class="container">
-		<nav class="mobile__nav">
-			<ul class="mobile__nav-list">
-				<li class="mobile__list-item sublist">
-					<div class="mobile__list-btn">
-						<a href="about.html">О системе</a>
-						<img src="./img/svg/arrow.svg" alt="Иконка: Стрелка">
-					</div>
-					<ul class="mobile__sublist">
-						<li class="mobile__sublist-item">
-							<a href="our-libraries.html">Наши библиотеки</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="administration.html">Администрация</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="smi-about.html">СМИ о нас</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="documents.html">Документы</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="projects.html">Проекты</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="for-partners.html">Коллегам</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="/">Волонтёры культуры</a>
-						</li>
-					</ul>
-				</li>
-				<li class="mobile__list-item sublist">
-					<div class="mobile__list-btn">
-						<a href="info-source.html">Информационные ресурсы</a>
-						<img src="./img/svg/arrow.svg" alt="Иконка: Стрелка">
-					</div>
-					<ul class="mobile__sublist">
-						<li class="mobile__sublist-item">
-							<a href="our-libraries.html">Наши библиотеки</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="administration.html">Администрация</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="smi-about.html">СМИ о нас</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="documents.html">Документы</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="projects.html">Проекты</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="for-partners.html">Коллегам</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="/">Волонтёры культуры</a>
-						</li>
-					</ul>
-				</li>
-				<li class="mobile__list-item sublist">
-					<div class="mobile__list-btn">
-						<a href="/">Онлайн-сервисы</a>
-						<img src="./img/svg/arrow.svg" alt="Иконка: Стрелка">
-					</div>
-					<ul class="mobile__sublist">
-						<li class="mobile__sublist-item">
-							<a href="/">Наши библиотеки</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="/">Администрация</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="/">СМИ о нас</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="/">Документы</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="/">Проекты</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="/">Коллегам</a>
-						</li>
-						<li class="mobile__sublist-item">
-							<a href="/">Волонтёры культуры</a>
-						</li>
-					</ul>
-				</li>
-				<li class="mobile__list-item"><a href="service.html">Услуги</a></li>
-				<li class="mobile__list-item"><a href="affiche.html">Афиша</a></li>
-				<li class="mobile__list-item"><a href="news.html">Новости</a></li>
-				<li class="mobile__list-item"><a href="reviews.html">Независимая оценка</a></li>
-			</ul>
-		</nav>
+		<ul class="mobile__nav-list">
+			<li class="mobile__list-item sublist">
+				<div class="mobile__list-btn">
+					<a href="about.html">О системе</a>
+					<img src="./img/svg/arrow.svg" alt="Иконка: Стрелка">
+				</div>
+				<ul class="mobile__sublist">
+					<li class="mobile__sublist-item">
+						<a href="our-libraries.html">Наши библиотеки</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="administration.html">Администрация</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="smi-about.html">СМИ о нас</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="documents.html">Документы</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="projects.html">Проекты</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="for-partners.html">Коллегам</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="/">Волонтёры культуры</a>
+					</li>
+				</ul>
+			</li>
+			<li class="mobile__list-item sublist">
+				<div class="mobile__list-btn">
+					<a href="info-source.html">Информационные ресурсы</a>
+					<img src="./img/svg/arrow.svg" alt="Иконка: Стрелка">
+				</div>
+				<ul class="mobile__sublist">
+					<li class="mobile__sublist-item">
+						<a href="our-libraries.html">Наши библиотеки</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="administration.html">Администрация</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="smi-about.html">СМИ о нас</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="documents.html">Документы</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="projects.html">Проекты</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="for-partners.html">Коллегам</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="/">Волонтёры культуры</a>
+					</li>
+				</ul>
+			</li>
+			<li class="mobile__list-item sublist">
+				<div class="mobile__list-btn">
+					<a href="/">Онлайн-сервисы</a>
+					<img src="./img/svg/arrow.svg" alt="Иконка: Стрелка">
+				</div>
+				<ul class="mobile__sublist">
+					<li class="mobile__sublist-item">
+						<a href="/">Наши библиотеки</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="/">Администрация</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="/">СМИ о нас</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="/">Документы</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="/">Проекты</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="/">Коллегам</a>
+					</li>
+					<li class="mobile__sublist-item">
+						<a href="/">Волонтёры культуры</a>
+					</li>
+				</ul>
+			</li>
+			<li class="mobile__list-item"><a href="service.html">Услуги</a></li>
+			<li class="mobile__list-item"><a href="affiche.html">Афиша</a></li>
+			<li class="mobile__list-item"><a href="news.html">Новости</a></li>
+			<li class="mobile__list-item"><a href="reviews.html">Независимая оценка</a></li>
+		</ul>
 	</div>
 	<!-- /.container -->
-</div>
+</nav>
 <!-- MOBILE-MENU END -->
 </header>
 <!-- HEADER END -->
 	<main class="single-news">
 		<!-- BREADCRUMB START -->
-<section class="breadcrumb">
+<nav class="breadcrumb">
 	<div class="container">
 		<ul class="breadcrumb__list">
 			<li class="breadcrumb__list-item breadcrumb-main"><a href="index.html">Главная</a></li>
@@ -181,7 +178,7 @@
 		</ul>
 	</div>
 	<!-- /.container -->
-</section>
+</nav>
 
 <!-- BREADCRUMB END -->
 		<div class="title-wrapper">

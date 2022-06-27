@@ -2150,6 +2150,10 @@ template {
   .header__mobile {
     display: block;
   }
+  .header__search--hidden {
+    display: block;
+    width: 100%;
+  }
   .header__buttons {
     display: flex;
   }
