@@ -3,8 +3,12 @@ import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 export const swipers = () => {
   // Первый слайдер на главной
   const swiperEvents = new Swiper('.swiper.events__slider', {
-    modules: [Navigation, Pagination],
+    modules: [Navigation, Pagination, Autoplay],
     loop: true,
+    disableOnInteraction: false,
+    autoplay: {
+      delay: 5000,
+    },
     pagination: {
       el: '.events__slider-dots',
     },
@@ -53,11 +57,8 @@ export const swipers = () => {
   });
   // Краеведение - виртуальные выставки, проекты
   const swiperExposition = new Swiper('.swiper.exposition__slider', {
-    modules: [Navigation, Pagination, Autoplay],
+    modules: [Navigation, Pagination],
     loop: true,
-    autoplay: {
-      delay: 3000,
-    },
     spaceBetween: 24,
     breakpoints: {
       576: {
@@ -83,7 +84,6 @@ export const swipers = () => {
     },
   });
 };
-
 // Слайдер с книгами
 const booksSlider = slider => {
   const swiper = new Swiper(`.swiper.${slider}__slider`, {

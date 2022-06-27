@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220627122357" />
+  <link rel="stylesheet" href="./css/style.min.css?_v=20220627193008" />
   <title>Партнеры</title>
 </head>
 
@@ -14,48 +14,107 @@
 	<!-- HEADER START -->
 <header class="header">
 	<div class="container">
-		<div class="header__top">
-			<a href="index.html" class="header-logo">
-				<picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></picture></a>
-			<div class="header__search">
-				<form action="#" class="header__search">
-					<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
-					<button type="submit" class="header__search-btn">
-					</button>
-				</form>
-			</div>
-			<a href="/" class="header-btn link-btn">Задать вопрос</a>
-			<div class="header__buttons">
-				<button class="header-search__btn header-mobile__btn"></button>
-				<a class="header-question__btn header-mobile__btn"></a>
-				<button class="header-menu__btn header-mobile__btn"></button>
-			</div>
-		</div>
-		<!-- /.header__top -->
-		<nav class="header__nav">
-			<ul class="header__nav-list">
-				<li class="header__nav-item"><a href="index.html">Главная</a>
+		<!-- HEADER-TOP START -->
+<div class="header__top">
+	<a href="index.html" class="header-logo">
+		<picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></picture></a>
+	<div class="header__search">
+		<form action="#" class="header__search">
+			<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
+			<button type="submit" class="header__search-btn">
+			</button>
+		</form>
+	</div>
+	<a href="/" class="header-btn link-btn">Задать вопрос</a>
+	<div class="header__buttons">
+		<button class="header-search__btn header-mobile__btn"></button>
+		<a class="header-question__btn header-mobile__btn"></a>
+		<button class="header-menu__btn header-mobile__btn"></button>
+	</div>
+</div>
+<!-- HEADER-TOP END -->
+		<!-- HEADER-NAV END -->
+<nav class="header__nav">
+	<ul class="header__nav-list">
+		<li class="header__nav-item"><a href="index.html">Главная</a>
+		</li>
+		<li class="header__nav-item" data-name="about"><span>О системе</span>
+			<ul id="about" class="header__dropdown-list">
+				<li class="header__dropdown-item">
+					<a href="libraries.html">Наши библиотеки</a>
 				</li>
-				<li class="header__nav-item"><a href="about.html">О системе</a>
+				<li class="header__dropdown-item">
+					<a href="administration.html">Администрация</a>
 				</li>
-				<li class="header__nav-item"><a href="info-source.html">Информационные ресурсы</a>
+				<li class="header__dropdown-item">
+					<a href="media.html">СМИ о нас</a>
 				</li>
-				<li class="header__nav-item"><a href="online-services.html">Онлайн-сервисы</a>
+				<li class="header__dropdown-item">
+					<a href="documents.html">Документы</a>
 				</li>
-				<li class="header__nav-item"><a href="services.html">Услуги</a>
+				<li class="header__dropdown-item">
+					<a href="projects.html">Проекты</a>
 				</li>
-				<li class="header__nav-item"><a href="affiche.html">Афиша</a>
+				<li class="header__dropdown-item">
+					<a href="for-partners.html">Партнерам</a>
 				</li>
-				<li class="header__nav-item"><a href="news.html">Новости</a>
-				</li>
-				<li class="header__nav-item"><a href="reviews.html">Независимая оценка</a>
+				<li class="header__dropdown-item">
+					<a href="volontiers.html">Волонтёры культуры</a>
 				</li>
 			</ul>
-		</nav>
-		<!-- /.header__nav -->
+		</li>
+		<li class="header__nav-item" data-name="info-source"><span>Информационные ресурсы</span>
+			<ul id="about" class="header__dropdown-list">
+				<li class="header__dropdown-item">
+					<a href="history.html">Краеведение</a>
+				</li>
+				<li class="header__dropdown-item">
+					<a href="complex.html">Библиотечно-информационный комплекс</a>
+				</li>
+				<li class="header__dropdown-item">
+					<a href="bibliography.html">Библиография</a>
+				</li>
+			</ul>
+		</li>
+		<li class="header__nav-item" data-name="online-services"><span>Онлайн-сервисы</span>
+			<ul id="about" class="header__dropdown-list">
+				<li class="header__dropdown-item">
+					<a href="libraries.html">Наши библиотеки</a>
+				</li>
+				<li class="header__dropdown-item">
+					<a href="administration.html">Администрация</a>
+				</li>
+				<li class="header__dropdown-item">
+					<a href="media.html">СМИ о нас</a>
+				</li>
+				<li class="header__dropdown-item">
+					<a href="documents.html">Документы</a>
+				</li>
+				<li class="header__dropdown-item">
+					<a href="projects.html">Проекты</a>
+				</li>
+				<li class="header__dropdown-item">
+					<a href="for-partners.html">Партнерам</a>
+				</li>
+				<li class="header__dropdown-item">
+					<a href="volontiers.html">Волонтёры культуры</a>
+				</li>
+			</ul>
+		</li>
+		<li class="header__nav-item"><a href="services.html">Услуги</a>
+		</li>
+		<li class="header__nav-item"><a href="affiche.html">Афиша</a>
+		</li>
+		<li class="header__nav-item"><a href="news.html">Новости</a>
+		</li>
+		<li class="header__nav-item"><a href="reviews.html">Независимая оценка</a>
+		</li>
+	</ul>
+</nav>
+<!-- HEADER-NAV START -->
 	</div>
 	<!-- /.container -->
-	<!-- /.MOBILE-SEARCH START-->
+	<!-- / MOBILE-SEARCH START-->
 <div class="mobile__search">
 	<div class="container">
 		<form action="#" class="header__search header__search--hidden">
@@ -65,7 +124,7 @@
 		</form>
 	</div>
 </div>
-<!-- /.MOBILE-SEARCH END-->
+<!-- / MOBILE-SEARCH END-->
 	<!-- MOBILE-MENU START -->
 <nav class="mobile__menu">
 	<div class="container">
@@ -401,7 +460,7 @@
 	<!-- /.container -->
 </footer>
 <!-- FOOTER END -->
-	<script src="js/app.min.js?_v=20220627122357"></script>
+	<script src="js/app.min.js?_v=20220627193008"></script>
 </body>
 
 </html>

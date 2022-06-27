@@ -1,0 +1,59 @@
+.news
+	& .cards
+		padding-top: 0
+		&__wrapper
+			flex-wrap: wrap
+		&__item
+			width: 23.43%
+			margin-bottom: 30px
+			box-shadow: 0px 0px 30px #D9D9D9
+			&-info
+				display: flex
+				flex-direction: column
+				flex-grow: 1
+				padding: 12px 18px 22px 22px
+			&-title
+				font-weight: 500
+				font-size: 14px
+				line-height: 150%
+			&-date
+				display: inline-block
+				margin-top: auto
+
+.news__pagination
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 18px
+	&-prev, &-next
+		font-weight: 500
+		font-size: 16px
+		line-height: 100%
+	&-list
+		display: flex
+		align-items: center
+	&-item
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 36px
+		height: 36px
+		background: #0092B5
+		border-radius: $border
+		font-weight: 700
+		font-size: 16px
+		line-height: 100%
+		color: #ffffff
+		cursor: pointer
+		&:not(:last-child), &:not(:first-child)
+			margin-right: 13px
+		&:first-child
+			margin-left: 23px
+		&:last-child
+			margin-right: 23px
+			margin-left: 12px
+	&-dots
+		padding-bottom: 10px
+		font-weight: 500
+		font-size: 16px
+		line-height: 100%

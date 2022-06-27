@@ -41,6 +41,11 @@
 			font-size: 16px
 			line-height: 20px
 			color: #FFFFFF
+			&:hover
+				& .header__dropdown-list
+					// display: block
+					max-height: 100vh
+					transition: all ease-in 0.3s
 
 	&__mobile
 		display: none
@@ -69,3 +74,29 @@
 		background-image: url(../img/svg/burger.svg)
 		&.active
 			background-image: url(../img/svg/cross.svg)
+
+.header
+	&__dropdown
+		&-list
+			position: absolute
+			// display: none
+			width: auto
+			min-width: max-content
+			max-height: 0
+			padding: 0 24px
+			text-align: left
+			background: rgba(192, 0, 0, 0.9)
+			z-index: 1000
+			overflow: hidden
+			transition: all ease 0.1s
+		&-item
+			font-weight: 500
+			font-size: 14px
+			line-height: 17px
+			color: #FFFFFF
+			&:not(:last-child)
+				margin-bottom: 10px
+			&:first-child
+				margin-top: 32px
+			&:last-child
+				margin-bottom: 24px

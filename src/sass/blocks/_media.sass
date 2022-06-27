@@ -37,6 +37,10 @@
 		& .about
 			&__image
 				margin-top: 70px
+	.news
+		& .cards
+			&__item
+				width: 31%
 @media (max-width: 991px)
 	body
 		padding-top: 125px
@@ -167,6 +171,9 @@
 	.libraries
 		& .cards__item
 			width: 49%
+	.news
+		& .cards__item
+			width: 48.2%
 @media (max-width: 768px)
 	body
 		padding-top: 81px
@@ -407,6 +414,9 @@
 		&__month
 			&-btn
 				font-size: 14px
+	.news
+		&__pagination
+			margin-top: 42px
 @media (max-width: 576px)
 
 	.footer
@@ -534,6 +544,25 @@
 			&-title
 				margin-bottom: 16px
 				line-height: 130%
+	.news
+		& .cards__item
+			width: 100%
+			&-info
+				padding: 10px 16px 16px 16px
+		&__pagination
+			&-prev, &-next
+				display: none
+			&-item
+				width: 30px
+				height: 30px
+				&:not(:last-child),
+				&:not(:first-child)
+					margin-right: 10px
+				&:first-child
+					margin-left: 0
+				&:last-child
+					margin-left: 10px
+					margin-right: 0
 @media (max-width: 480px)
 	.review
 		&-image

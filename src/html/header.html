@@ -1,48 +1,11 @@
 <!-- HEADER START -->
 <header class="header">
 	<div class="container">
-		<div class="header__top">
-			<a href="index.html" class="header-logo">
-				<img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></a>
-			<div class="header__search">
-				<form action="#" class="header__search">
-					<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
-					<button type="submit" class="header__search-btn">
-					</button>
-				</form>
-			</div>
-			<a href="/" class="header-btn link-btn">Задать вопрос</a>
-			<div class="header__buttons">
-				<button class="header-search__btn header-mobile__btn"></button>
-				<a class="header-question__btn header-mobile__btn"></a>
-				<button class="header-menu__btn header-mobile__btn"></button>
-			</div>
-		</div>
-		<!-- /.header__top -->
-		<nav class="header__nav">
-			<ul class="header__nav-list">
-				<li class="header__nav-item"><a href="index.html">Главная</a>
-				</li>
-				<li class="header__nav-item"><a href="about.html">О системе</a>
-				</li>
-				<li class="header__nav-item"><a href="info-source.html">Информационные ресурсы</a>
-				</li>
-				<li class="header__nav-item"><a href="online-services.html">Онлайн-сервисы</a>
-				</li>
-				<li class="header__nav-item"><a href="services.html">Услуги</a>
-				</li>
-				<li class="header__nav-item"><a href="affiche.html">Афиша</a>
-				</li>
-				<li class="header__nav-item"><a href="news.html">Новости</a>
-				</li>
-				<li class="header__nav-item"><a href="reviews.html">Независимая оценка</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- /.header__nav -->
+		@@include('./components/header/top.html',{})
+		@@include('./components/header/nav.html',{})
 	</div>
 	<!-- /.container -->
-	@@include('./components/mobile/search.html',{})
-	@@include('./components/mobile/menu.html',{})
+	@@include('./components/header/mobile/search.html',{})
+	@@include('./components/header/mobile/menu.html',{})
 </header>
 <!-- HEADER END -->

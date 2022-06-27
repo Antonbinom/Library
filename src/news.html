@@ -1,0 +1,14 @@
+@@include('html/head.html',{ "title":"Новости" })
+
+<body>
+	@@include('html/header.html',{})
+	<main class="news">
+		@@include('html/breadcrumb.html',{ "page":"Новости" })
+		@@include('html/title.html',{"title":"Новости","class":"news-title"})
+		@@include('html/components/news/cards.html',{})
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
