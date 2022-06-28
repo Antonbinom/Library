@@ -1,0 +1,16 @@
+@@include('html/head.html',{ "title":"Заказать литературу" })
+
+<body>
+	@@include('html/header.html',{})
+	<main class="order">
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Заказать литературу" })
+			@@include('html/title.html',{"title":"Заказать литературу","class":"order-title"})
+			@@include('html/components/forms/order.html',{})
+		</div>
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

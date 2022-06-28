@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex">
   <link rel="stylesheet" href="./css/style.min.css" />
-  <title>Доступная среда</title>
+  <title>Создать событие</title>
 </head>
 
 <body>
@@ -227,113 +227,108 @@
 <!-- MOBILE-MENU END -->
 </header>
 <!-- HEADER END -->
-	<main class="availble">
+	<main class="create">
 		<div class="container">
 			<!-- BREADCRUMB START -->
 <nav class="breadcrumb">
 	<ul class="breadcrumb__list">
 		<li class="breadcrumb__list-item breadcrumb-main"><a href="index.html">Главная</a></li>
-		<li class="breadcrumb__list-item active">Доступная среда</li>
+		<li class="breadcrumb__list-item active">Создать событие</li>
 	</ul>
 </nav>
 
 <!-- BREADCRUMB END -->
-			<h1 class="title availble-title">Доступная среда</h1>
-			<!-- INFO START -->
-<section class="available__info">
-	<div class="available__info-description">
-		<p>
-			<span>Уважаемые читатели!</span> <br>
-			Лицам с ограниченными возможностями по здоровью <br>
-			и другим маломобильным группам населения <br>
-			библиотека предлагает книги с доставкой на дом!
-		</p>
-		<p>Желающих воспользоваться данной услугой просим позвонить по телефонам: <br>
-			<span>35-75-17, 35-57-18, 35-53-67</span>
-		</p>
-		<div class="available__info-text border-elem">
-			<p>Основными направлениями и особенностями по обеспечению доступной среды жизнедеятельности инвалидов в Российской
-				Федерации являются: ориентация на устранение всевозможных барьеров, возникающих перед людьми с ограниченными
-				возможностями.
-			</p>
-			<p>
-				Если вы нуждаетесь в информации - мы готовы вам помочь!
-			</p>
-			<p>Предлагаем полезную информацию для успешной и качественной жизни!
-			</p>
-			<p>Мы подготовили для вас информационный список статей из периодических изданий.
-			</p>
-		</div>
-	</div>
-	<img src="./img/available/invalid.png" alt="Изображение: Лицо с ограниченными возможностями"
-		class="available__info-image">
-</section>
-<!-- INFO END -->
-			<!-- INFO BOOKS START -->
-<section class="info__books books">
-	<div class="books__wrapper">
-		<h2 class="section-title books-title">Информационные пособия</h2>
-		<div class="info__slider books__slider swiper">
-			<div class="swiper-wrapper">
-				<div class="books__slide swiper-slide">
-					<img class="books__slide-image books__slide-image" src="./img/novelty/book-1.png" alt="Изображение: Книга">
-					<div class="books__slide-info books__slide-info">
-						<span class="books__slide-name books__slide-name">Дарители. <br>Земля забытых</span>
-						<span class="books__slide-author books__slide-author">Екатерина Соболь</span>
-					</div>
-				</div>
-				<div class="books__slide swiper-slide">
-					<img class="books__slide-image" src="./img/novelty/book-2.png" alt="Изображение: Книга">
-					<div class="books__slide-info">
-						<span class="books__slide-name">Братство Коннора</span>
-						<span class="books__slide-author">Джиллиан</span>
-					</div>
-				</div>
-				<div class="books__slide swiper-slide">
-					<img class="books__slide-image" src="./img/novelty/book-3.png" alt="Изображение: Книга">
-					<div class="books__slide-info">
-						<span class="books__slide-name">Гарри Поттер <br>
-							и Принц-полукровка</span>
-						<span class="books__slide-author">Джоан Кэтлин Роулинг</span>
-					</div>
-				</div>
-				<div class="books__slide swiper-slide">
-					<img class="books__slide-image" src="./img/novelty/book-4.png" alt="Изображение: Книга">
-					<div class="books__slide-info">
-						<span class="books__slide-name">Элизиум. <br>
-							Алекс и монеты</span>
-						<span class="books__slide-author">Александр Андерсон</span>
-					</div>
-				</div>
-				<div class="books__slide swiper-slide">
-					<img class="books__slide-image" src="./img/novelty/book-5.png" alt="Изображение: Книга">
-					<div class="books__slide-info">
-						<span class="books__slide-name">Дракула</span>
-						<span class="books__slide-author">Брэм Стокер</span>
-					</div>
-				</div>
-				<div class="books__slide swiper-slide">
-					<img class="books__slide-image" src="./img/novelty/book-6.png" alt="Изображение: Книга">
-					<div class="books__slide-info">
-						<span class="books__slide-name">Элементарная магия</span>
-						<span class="books__slide-author">Лина Алфеева</span>
-					</div>
-				</div>
-				<div class="books__slide swiper-slide">
-					<img class="books__slide-image" src="./img/novelty/book-7.png" alt="Изображение: Книга">
-					<div class="books__slide-info">
-						<span class="books__slide-name">Адептка</span>
-						<span class="books__slide-author">Елена Звёздная</span>
-					</div>
+			<h1 class="title create-title">Создать событие</h1>
+			<section class="create__form form__wrapper">
+	<form class="form" action="">
+		<h3 class="create__form-title">Основная информация</h3>
+		<div class="form__top">
+			<div class="form__input form__input-photo">
+				<label class="input-label" for="photo">Главное изображение&nbsp;<span>*</span></label>
+				<div class="form__input-photo-wrapper"><input type="file" name="photo" multiple accept="image/*,image/jpeg">
 				</div>
 			</div>
-			<div class="info__slider-dots books__slider-dots slider-dots"></div>
-			<div class="info__slider-next books__slider-next slider-prev"></div>
-			<div class="info__slider-next books__slider-next slider-next"></div>
+			<div class="form__inputs">
+				<div class="form__input form__input-title">
+					<label class="input-label" for="title">Название&nbsp;<span>*</span></label>
+					<input type="text" name="title" placeholder="Вечер-встреча «Главный герой»" required>
+					<div class="form__input-letters">
+						Символов:&nbsp;<span class="title-letters">0</span>&nbsp;/&nbsp;90
+					</div>
+				</div>
+				<!-- /form__input-title-->
+				<div class="form__inputs-description">
+					<div class="form__input form__input-category">
+						<label class="input-label" for="category">Категория&nbsp;<span>*</span></label>
+						<select class="form__select">
+							<option class="option-default" disabled selected value>Афиша / Событие</option>
+							<option value="1">Событие 1</option>
+							<option value="2">Событие 2</option>
+							<option value="3">Событие 3</option>
+						</select>
+					</div>
+					<!-- /form__input-category-->
+					<div class="form__input form__input-age">
+						<label class="input-label">Возрастное ограничение&nbsp;<span>*</span></label>
+						<select class="form__select">
+							<option class="option-default" disabled selected value="">+6 / +12 / +16</option>
+							<option value="6">+6</option>
+							<option value="12">+12</option>
+							<option value="16">+16</option>
+						</select>
+					</div>
+					<!-- /form__input-age-->
+					<div class="form__input form__input-inside">
+						<label class="input-label">Место проведения&nbsp;<span>*</span></label>
+						<select class="form__select">
+							<option class="option-default" disabled selected value="">Библиотека им. Л.Н. Толстого</option>
+							<option value="1">Библиотека им. Л.Н. Толстого</option>
+							<option value="2">Библиотека им. Л.Н. Толстого</option>
+							<option value="3">Библиотека им. Л.Н. Толстого</option>
+						</select>
+					</div>
+					<!-- /form__input-insade place-->
+					<div class="form__input form__input-outside">
+						<label class="input-label" for="place">Место проведения (вне стен библиотеки)&nbsp;<span>*</span></label>
+						<input type="text" name="place" placeholder="Платоновский парк" required>
+					</div>
+					<!-- /form__input-outside place-->
+					<div class="form__input form__input-date">
+						<label class="input-label" for="date">Дата&nbsp;<span>*</span></label>
+						<input type="text" name="date" placeholder="04.03.2022" required>
+					</div>
+					<!-- /form__input-outside date-->
+					<div class="form__input form__input-time">
+						<label class="input-label" for="time">Время&nbsp;<span>*</span></label>
+						<div class="form__input-time-wrapper">
+							<input type="text" name="time" placeholder="С 10:00" required>
+							<input type="text" name="time" placeholder="До 11:00" required>
+						</div>
+					</div>
+					<!-- /form__input-outside date-->
+				</div>
+			</div>
 		</div>
-	</div>
+		<div class="form__input form__input-description">
+			<label class="input-label" for="description">Полное описание&nbsp;<span>*</span></label>
+			<textarea name="description" required></textarea>
+			<div class="form__input-letters">
+				Символов:&nbsp;<span class="message-letters">0</span>&nbsp;/&nbsp;1000
+			</div>
+			<div class="form__input-letters"><span class="message-standart">Необходимый объём символов: 500–1000</span>
+			</div>
+		</div>
+		<!-- /form__input-message-->
+		<div class="form__bottom">
+			<div class="form__input form__input-gallery">
+				<label class="input-label" for="gallery">Галерея&nbsp;<span>*</span></label>
+				<div class="form__input-gallery-wrapper"><input type="file" name="gallery" multiple accept="image/*,image/jpeg">
+				</div>
+			</div>
+			<button class="form-btn link-btn" type="submit">Отправить</button>
+		</div>
+	</form>
 </section>
-<!-- INFO BOOKS END -->
 		</div>
 	</main>
 	<!-- FOOTER START -->

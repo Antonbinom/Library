@@ -26,8 +26,8 @@ button, input
 	cursor: pointer
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
-input
-	padding: 11px 16px
+input, select
+	padding: 10px 16px
 	font-weight: 500
 	font-size: 12px
 	line-height: 15px
@@ -38,6 +38,9 @@ input
 	&::placeholder
 		color: #B6B6B6
 		opacity: 0.8
+		font-weight: 500
+		font-size: 12px
+		line-height: 15px
 
 h1, h2, h3, h4 ,h5, h6, p, ul
 	padding: 0
@@ -107,6 +110,8 @@ h2
 	font-weight: 400
 	font-size: 14px
 	line-height: 150%
+	& p:not(:last-child)
+		margin-bottom: 21px
 
 	&.text-header
 		margin-bottom: 32px
@@ -116,3 +121,11 @@ h2
 		& b
 			display: inline-block
 			margin-bottom: 25px
+.input-label
+	display: inline-block
+	margin-bottom: 12px
+	font-weight: 500
+	font-size: 14px
+	line-height: 17px
+	& span
+		color: $red

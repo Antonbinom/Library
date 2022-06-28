@@ -1,0 +1,16 @@
+@@include('html/head.html',{ "title":"Периодика" })
+
+<body>
+	@@include('html/header.html',{})
+	<main class="newsroom">
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Периодика" })
+			@@include('html/title.html',{"title":"Периодика","class":"newsroom-title"})
+			@@include('html/components/newsroom/main.html',{})
+		</div>
+	</main>
+	@@include('html/footer.html',{})
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

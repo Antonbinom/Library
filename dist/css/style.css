@@ -741,8 +741,8 @@ button, input {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-input {
-  padding: 11px 16px;
+input, select {
+  padding: 10px 16px;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
@@ -751,9 +751,12 @@ input {
   border: 1px solid #B6B6B6;
   border-radius: 6px;
 }
-input::placeholder {
+input::placeholder, select::placeholder {
   color: #B6B6B6;
   opacity: 0.8;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
@@ -841,6 +844,9 @@ h2 {
   font-size: 14px;
   line-height: 150%;
 }
+.border-elem p:not(:last-child) {
+  margin-bottom: 21px;
+}
 .border-elem.text-header {
   margin-bottom: 32px;
 }
@@ -851,6 +857,17 @@ h2 {
 .border-elem.text-header b {
   display: inline-block;
   margin-bottom: 25px;
+}
+
+.input-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.input-label span {
+  color: #C00000;
 }
 
 html {
@@ -1257,6 +1274,194 @@ template {
 }
 .set__list-item a {
   color: #0092B5;
+}
+
+.form__wrapper {
+  padding: 54px;
+  margin-bottom: 84px;
+  background: #ECECEC;
+}
+.form__inputs {
+  display: flex;
+  justify-content: space-between;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.form__input-photo-wrapper, .form__input-gallery-wrapper {
+  width: 130px;
+  height: 130px;
+  background-color: #fff;
+  background-image: url("../img/svg/inputPhoto.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 42px 42px;
+  border: 1px solid #B6B6B6;
+  border-radius: 6px;
+}
+.form__input-photo input, .form__input-gallery input {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.form__input-books input:not(:last-child) {
+  margin-bottom: 14px;
+}
+.form__input textarea {
+  padding: 11px 16px;
+  line-height: 130%;
+  font-weight: 500;
+  font-size: 14px;
+}
+.form__select {
+  width: 100%;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+.form-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.order__form-title {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.order .form {
+  width: auto;
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+.question .form {
+  width: auto;
+  max-width: 1054px;
+}
+.question .form__input {
+  margin-bottom: 30px;
+  width: 48.6%;
+}
+.question .form__input-message {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.question .form__input-message textarea {
+  height: 311px;
+}
+.question .form-btn {
+  margin: 0;
+}
+
+.create__form-title {
+  width: 100%;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.create .form {
+  display: flex;
+  flex-direction: column;
+}
+.create .form__top {
+  display: flex;
+  justify-content: space-between;
+}
+.create .form__bottom {
+  display: flex;
+  align-items: end;
+}
+.create .form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 993px;
+}
+.create .form__inputs-description {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.create .form__input-title {
+  width: 100%;
+  margin-bottom: 45px;
+}
+.create .form__input-photo {
+  margin-right: 64px;
+}
+.create .form__input-letters {
+  margin-top: 5px;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #B6B6B6;
+}
+.create .form__input-category {
+  width: 159px;
+  margin-right: 34px;
+}
+.create .form__input-age select {
+  width: 120px;
+  margin-right: 34px;
+}
+.create .form__input-message {
+  width: 100%;
+}
+.create .form__input-inside {
+  width: 100%;
+  max-width: 389px;
+}
+.create .form__input-outside {
+  width: 100%;
+  max-width: 660px;
+  margin-right: 34px;
+}
+.create .form__input-date {
+  width: 98px;
+  margin-right: 34px;
+}
+.create .form__input-time {
+  width: 167px;
+}
+.create .form__input-time-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.create .form__input-time input {
+  width: 75px;
+}
+.create .form__input-description {
+  width: 100%;
+}
+.create .form__input-description textarea {
+  height: 196px;
+}
+.create .form__input-gallery {
+  display: inline-block;
+  width: 130px;
+  height: 159px;
+  margin-bottom: 0;
+}
+.create .form-btn {
+  display: inline-block;
+  width: max-content;
+  height: max-content;
+  margin: 0;
+  margin-left: auto;
+}
+.create select {
+  margin-bottom: 0;
+  appearance: none;
+  overflow: hidden;
+  background: url("../img/svg/select-arrow.svg") no-repeat center right 16px;
+  background-color: #fff;
 }
 
 .books {
@@ -2064,16 +2269,8 @@ template {
 .media {
   padding-bottom: 42px;
 }
-.media__tabs {
-  padding: 32px 0px;
-  display: flex;
-  flex-direction: column;
-}
 .media__tabs-year {
-  display: flex;
-  flex-wrap: wrap;
   max-width: 900px;
-  margin-bottom: 0;
 }
 .media__tabs-month {
   margin: 12px 0;
@@ -2094,10 +2291,18 @@ template {
   margin-bottom: 12px;
 }
 
-.tabs__year-btn {
+.period__tabs {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding: 32px 0px;
+}
+.period__tabs-year {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.tabs__year-btn {
   width: 114px;
   height: 43px;
   margin-right: 32px;
@@ -2192,6 +2397,40 @@ template {
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
+}
+
+.available__info {
+  margin-bottom: 63px;
+  display: flex;
+}
+.available__info-description {
+  margin-right: 149px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+.available__info-description span {
+  font-weight: 500;
+}
+.available__info-text {
+  width: 665px;
+  margin-top: 50px;
+  font-weight: 500;
+}
+.available__info-image {
+  width: 214px;
+  height: 207px;
+  object-fit: cover;
+}
+
+.newsroom__tabs {
+  padding-bottom: 42px;
+}
+.newsroom__tabs .tabs__year-btn {
+  margin-bottom: 30px;
+}
+.newsroom__tabs__content {
+  margin-top: 16px;
 }
 
 .footer {
@@ -2334,6 +2573,15 @@ template {
   }
   .news .cards__item {
     width: 31%;
+  }
+  .available__info {
+    justify-content: space-between;
+  }
+  .available__info-description {
+    margin-right: 30px;
+  }
+  .available__info-text {
+    width: auto;
   }
 }
 @media (max-width: 991px) {
@@ -2784,6 +3032,88 @@ template {
   }
   .news__pagination {
     margin-top: 42px;
+  }
+  .available__info {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+  .available__info-description {
+    margin-right: 0;
+  }
+  .available__info-text {
+    margin-top: 32px;
+  }
+  .available__info-text p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .available__info-image {
+    width: 180px;
+    height: 174px;
+    order: -1;
+    margin-bottom: 32px;
+  }
+  .newsroom__tabs {
+    padding-bottom: 32px;
+  }
+  .newsroom__tabs-wrapper {
+    padding: 25px 0;
+  }
+  .newsroom__tabs.tabs__year-btn {
+    margin-bottom: 25px;
+  }
+  .newsroom__tabs .tabs__month-btn:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .newsroom__tabs-text p:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  .form__wrapper {
+    padding: 46px 12px;
+    margin-bottom: 70px;
+  }
+  .form__select {
+    margin-bottom: 30px;
+  }
+  .input-label {
+    margin-bottom: 10px;
+  }
+  .question .form__inputs {
+    flex-direction: column;
+  }
+  .question .form__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .question .form__input-message textarea {
+    height: 200px;
+  }
+  .create__form-title {
+    margin-bottom: 28px;
+    font-size: 14px;
+  }
+  .create .form__input {
+    margin-bottom: 24px;
+  }
+  .create .form__input label {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .create .form__input-letters {
+    margin-top: 8px;
+    font-size: 8px;
+    line-height: 150%;
+  }
+  .create .form__input-letters:last-child {
+    margin-top: 0px;
+  }
+  .create .form__top, .create .form__inputs-description, .create .form__bottom {
+    flex-direction: column;
+  }
+  .create .form__bottom {
+    align-items: start;
+  }
+  .create .form-btn {
+    margin-left: 0;
   }
 }
 @media (max-width: 576px) {

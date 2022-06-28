@@ -41,6 +41,13 @@
 		& .cards
 			&__item
 				width: 31%
+	.available
+		&__info
+			justify-content: space-between
+			&-description
+				margin-right: 30px
+			&-text
+				width: auto
 @media (max-width: 991px)
 	body
 		padding-top: 125px
@@ -417,6 +424,75 @@
 	.news
 		&__pagination
 			margin-top: 42px
+	.available
+		&__info
+			flex-direction: column
+			margin-bottom: 35px
+			&-description
+				margin-right: 0
+			&-text
+				margin-top: 32px
+				& p:not(:last-child)
+					margin-bottom: 15px
+			&-image
+				width: 180px
+				height: 174px
+				order: -1
+				margin-bottom: 32px
+	.newsroom
+		&__tabs
+			padding-bottom: 32px
+			&-wrapper
+				padding: 25px 0
+			&.tabs__year-btn
+				margin-bottom: 25px
+			&	.tabs__month-btn:not(:last-child)
+				margin-bottom: 12px
+			&-text
+				& p:not(:last-child)
+					margin-bottom: 15px
+	.form
+		&__wrapper
+			padding: 46px 12px
+			margin-bottom: 70px
+		&__select
+			margin-bottom: 30px
+	.input-label
+		margin-bottom: 10px
+	.question
+		& .form
+			&__inputs
+				flex-direction: column
+			&__input
+				width: 100%
+				margin-bottom: 20px
+				&-message
+					& textarea
+						height: 200px
+	.create
+		&__form
+			&-title
+				margin-bottom: 28px
+				font-size: 14px
+		& .form
+			&__input
+				margin-bottom: 24px
+				& label
+					font-size: 12px
+					line-height: 15px
+				&-letters
+					margin-top: 8px
+					font-size: 8px
+					line-height: 150%
+					&:last-child
+						margin-top: 0px
+			&__top, &__inputs-description, &__bottom
+				flex-direction: column
+			&__bottom
+				align-items: start
+			&-btn
+				margin-left: 0
+
 @media (max-width: 576px)
 
 	.footer
