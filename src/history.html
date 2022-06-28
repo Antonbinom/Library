@@ -3,10 +3,12 @@
 <body>
 	@@include('html/header.html',{})
 	<main class="history">
-		@@include('html/breadcrumb.html',{ "page":"Краеведение" })
-		@@include('html/title.html',{"title":"Краеведение"}, "class":"history-title")
-		@@include('html/components/history/review.html',{})
-		@@include('html/components/history/exposition.html',{})
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Краеведение" })
+			@@include('html/title.html',{"title":"Краеведение"}, "class":"history-title")
+			@@include('html/components/history/review.html',{})
+			@@include('html/components/history/exposition.html',{})
+		</div>
 	</main>
 	@@include('html/footer.html',{})
 	<script src="js/app.min.js"></script>

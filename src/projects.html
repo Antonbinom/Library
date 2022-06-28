@@ -3,10 +3,12 @@
 <body>
 	@@include('html/header.html',{})
 	<main class="projects">
-		@@include('html/breadcrumb.html',{ "page":"Проекты" })
-		@@include('html/title.html',{"title":"Проекты","class":"projects-title"})
-		@@include('html/components/projects/slider.html',{})
-		@@include('html/components/projects/about.html',{})
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Проекты" })
+			@@include('html/title.html',{"title":"Проекты","class":"projects-title"})
+			@@include('html/components/projects/slider.html',{})
+			@@include('html/components/projects/about.html',{})
+		</div>
 	</main>
 	@@include('html/footer.html',{})
 	<script src="js/app.min.js"></script>

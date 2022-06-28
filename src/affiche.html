@@ -3,12 +3,14 @@
 <body>
 	@@include('html/header.html',{})
 	<main class="affiche">
-		@@include('html/breadcrumb.html',{ "page":"Афиша" })
-		@@include('html/title.html',{"title":"Афиша", "class":"affiche-title"})
-		@@include('html/components/affiche/top.html',{})
-		@@include('html/components/affiche/about.html',{})
-		@@include('html/components/affiche/map.html',{})
-		@@include('html/components/affiche/today.html',{})
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Афиша" })
+			@@include('html/title.html',{"title":"Афиша", "class":"affiche-title"})
+			@@include('html/components/affiche/top.html',{})
+			@@include('html/components/affiche/about.html',{})
+			@@include('html/components/affiche/map.html',{})
+			@@include('html/components/affiche/today.html',{})
+		</div>
 	</main>
 	@@include('html/footer.html',{})
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>

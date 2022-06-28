@@ -3,11 +3,13 @@
 <body>
 	@@include('html/header.html',{})
 	<main class="complex">
-		@@include('html/breadcrumb.html',{ "page":"Библиотечно-информационный комплекс" })
-		@@include('html/title.html',{"title":"Библиотечно-информационный комплекс", "class":"complex-title"})
-		@@include('html/components/complex/about.html',{})
-		@@include('html/components/complex/map.html',{})
-		@@include('html/components/complex/cards.html',{})
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Библиотечно-информационный комплекс" })
+			@@include('html/title.html',{"title":"Библиотечно-информационный комплекс", "class":"complex-title"})
+			@@include('html/components/complex/about.html',{})
+			@@include('html/components/complex/map.html',{})
+			@@include('html/components/complex/cards.html',{})
+		</div>
 	</main>
 	@@include('html/footer.html',{})
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>

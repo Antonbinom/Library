@@ -3,9 +3,11 @@
 <body>
 	@@include('html/header.html',{})
 	<main class="availble">
-		@@include('html/breadcrumb.html',{ "page":"Доступная среда" })
-		@@include('html/title.html',{"title":"Доступная среда","class":"availble-title"})
-		<!-- @@include('html/components/availble/cards.html',{}) -->
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Доступная среда" })
+			@@include('html/title.html',{"title":"Доступная среда","class":"availble-title"})
+			@@include('html/components/available/info-books.html',{})
+		</div>
 	</main>
 	@@include('html/footer.html',{})
 	<script src="js/app.min.js"></script>

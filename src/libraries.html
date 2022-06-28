@@ -3,9 +3,11 @@
 <body>
 	@@include('html/header.html',{})
 	<main class="libraries">
-		@@include('html/breadcrumb.html',{ "page":"Библиотеки системы" })
-		@@include('html/title.html',{"title":"Библиотеки системы","class":"libraries-title"})
-		@@include('html/components/libraries/cards.html',{})
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Библиотеки системы" })
+			@@include('html/title.html',{"title":"Библиотеки системы","class":"libraries-title"})
+			@@include('html/components/libraries/cards.html',{})
+		</div>
 	</main>
 	@@include('html/footer.html',{})
 	<script src="js/app.min.js"></script>

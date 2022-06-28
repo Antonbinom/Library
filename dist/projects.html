@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="./css/style.min.css?_v=20220627193737" />
+  <link rel="stylesheet" href="./css/style.min.css" />
   <title>Проекты</title>
 </head>
 
@@ -17,7 +17,7 @@
 		<!-- HEADER-TOP START -->
 <div class="header__top">
 	<a href="index.html" class="header-logo">
-		<picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></picture></a>
+		<img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></a>
 	<div class="header__search">
 		<form action="#" class="header__search">
 			<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
@@ -228,104 +228,91 @@
 </header>
 <!-- HEADER END -->
 	<main class="projects">
-		<!-- BREADCRUMB START -->
+		<div class="container">
+			<!-- BREADCRUMB START -->
 <nav class="breadcrumb">
-	<div class="container">
-		<ul class="breadcrumb__list">
-			<li class="breadcrumb__list-item breadcrumb-main"><a href="index.html">Главная</a></li>
-			<li class="breadcrumb__list-item active">Проекты</li>
-		</ul>
-	</div>
-	<!-- /.container -->
+	<ul class="breadcrumb__list">
+		<li class="breadcrumb__list-item breadcrumb-main"><a href="index.html">Главная</a></li>
+		<li class="breadcrumb__list-item active">Проекты</li>
+	</ul>
 </nav>
 
 <!-- BREADCRUMB END -->
-		<div class="title-wrapper">
-	<div class="container">
-		<h1 class="title projects-title">Проекты</h1>
-	</div>
-</div>
-		<!-- TABS START -->
+			<h1 class="title projects-title">Проекты</h1>
+			<!-- TABS START -->
 <section class="projects__tabs">
-	<div class="container">
-		<div class="projects__tabs-wrapper">
-			<ul class="projects__tabs-list">
-				<li class="projects__tabs-item">
-					<a href="/">Программы</a>
-				</li>
-				<li class="projects__tabs-item active">
-					<a href="/">Проекты</a>
-				</li>
-				<li class="projects__tabs-item">
-					<a href="/">Акции</a>
-				</li>
-			</ul>
-			<div class="projects__slider exposition__slider swiper">
-				<div class="projects_slider-wrapper swiper-wrapper">
-					<div class="projects__slide swiper-slide active">
-						<picture><source srcset="./img/projects/lev.webp" type="image/webp"><img class="projects__slide-image" src="./img/projects/lev.png" alt="Изображение: Лев Толстой"></picture>
-						<h4 class="projects__slide-title">«Толстой всегда современник»</h4>
-					</div>
-					<div class="projects__slide swiper-slide">
-						<picture><source srcset="./img/projects/tula.webp" type="image/webp"><img class="projects__slide-image" src="./img/projects/tula.png" alt="Изображение: Тула"></picture>
-						<h4 class="projects__slide-title">«Мы на Тульской земле живём»</h4>
-					</div>
-					<div class="projects__slide swiper-slide">
-						<picture><source srcset="./img/projects/mountain.webp" type="image/webp"><img class="projects__slide-image" src="./img/projects/mountain.png" alt="Изображение: Косая Гора"></picture>
-						<h4 class="projects__slide-title">«Косая Гора из века прошлого в настоящее»</h4>
-					</div>
-				</div>
-				<div class="projects__slider-dots exposition__slider-dots slider-dots"></div>
+	<ul class="projects__tabs-list">
+		<li class="projects__tabs-item">
+			<a href="/">Программы</a>
+		</li>
+		<li class="projects__tabs-item active">
+			<a href="/">Проекты</a>
+		</li>
+		<li class="projects__tabs-item">
+			<a href="/">Акции</a>
+		</li>
+	</ul>
+	<div class="projects__slider exposition__slider swiper">
+		<div class="projects_slider-wrapper swiper-wrapper">
+			<div class="projects__slide swiper-slide active">
+				<img class="projects__slide-image" src="./img/projects/lev.png" alt="Изображение: Лев Толстой">
+				<h4 class="projects__slide-title">«Толстой всегда современник»</h4>
 			</div>
-			<!-- /.projects__slider -->
+			<div class="projects__slide swiper-slide">
+				<img class="projects__slide-image" src="./img/projects/tula.png" alt="Изображение: Тула">
+				<h4 class="projects__slide-title">«Мы на Тульской земле живём»</h4>
+			</div>
+			<div class="projects__slide swiper-slide">
+				<img class="projects__slide-image" src="./img/projects/mountain.png" alt="Изображение: Косая Гора">
+				<h4 class="projects__slide-title">«Косая Гора из века прошлого в настоящее»</h4>
+			</div>
 		</div>
+		<div class="projects__slider-dots exposition__slider-dots slider-dots"></div>
 	</div>
-	<!-- /.container -->
+	<!-- /.projects__slider -->
 </section>
 <!-- SLIDER END -->
-		<!-- ABOUT START -->
+			<!-- ABOUT START -->
 <section class="projects__about about">
-	<div class="container">
-		<div class="about__wrapper">
-			<h2 class="section-title about-title hidden">«Толстой всегда современник»</h2>
-			<div class="about__image">
-				<picture><source srcset="./img/projects/levBig.webp" type="image/webp"><img src="./img/projects/levBig.png" alt="Фото: Лев Толстой"></picture>
-			</div>
-			<div class="about__description">
-				<h2 class="section-title about-title">«Толстой всегда современник»</h2>
-				<p class="about-text border-elem">
-					Проект включает в себя объединение усилий всех подразделений ЦГБ им. Л.Н. Толстого для сохранения духовного,
-					нравственного и культурного наследия великого русского писателя.
-				</p>
-				<h3 class="about-subtitle">ЦЕНТРАЛЬНАЯ ГОРОДСКАЯ БИБЛИОТЕКА ИМ. Л.Н. ТОЛСТОГО</h3>
-				<div class="about_info">
-					<div class="info__item time">
-						<img src="./img/svg/clock.svg" alt="Иконка: Часы">
-						<span>по будням: 11:00–19:00, в воскресенье: 11:00–18:00, в понедельник: выходной</span>
-					</div>
-					<div class="info__item user">
-						<img src="./img/svg/user.svg" alt="Иконка: Человек">
-						<span>Калинина Ольга Анатольевна</span>
-					</div>
-					<div class="info__item phone">
-						<img src="./img/svg/phone.svg" alt="Иконка: Телефон">
-						<a href="tel:+74872353438">+7 (4872) 35-34-38</a>
-					</div>
-					<div class="info__item mail">
-						<img src="./img/svg/mail.svg" alt="Иконка: Почта">
-						<a href="mailto:tbs_sgb@tularegion.org">tbs_sgb@tularegion.org</a>
-					</div>
-					<div class="info__item place">
-						<img src="./img/svg/gps.svg" alt="Иконка: GPS">
-						<span>г. Тула, ул. Болдина 149/10</span>
-					</div>
+	<div class="about__wrapper">
+		<h2 class="section-title about-title hidden">«Толстой всегда современник»</h2>
+		<div class="about__image">
+			<img src="./img/projects/levBig.png" alt="Фото: Лев Толстой">
+		</div>
+		<div class="about__description">
+			<h2 class="section-title about-title">«Толстой всегда современник»</h2>
+			<p class="about-text border-elem">
+				Проект включает в себя объединение усилий всех подразделений ЦГБ им. Л.Н. Толстого для сохранения духовного,
+				нравственного и культурного наследия великого русского писателя.
+			</p>
+			<h3 class="about-subtitle">ЦЕНТРАЛЬНАЯ ГОРОДСКАЯ БИБЛИОТЕКА ИМ. Л.Н. ТОЛСТОГО</h3>
+			<div class="about_info">
+				<div class="info__item time">
+					<img src="./img/svg/clock.svg" alt="Иконка: Часы">
+					<span>по будням: 11:00–19:00, в воскресенье: 11:00–18:00, в понедельник: выходной</span>
+				</div>
+				<div class="info__item user">
+					<img src="./img/svg/user.svg" alt="Иконка: Человек">
+					<span>Калинина Ольга Анатольевна</span>
+				</div>
+				<div class="info__item phone">
+					<img src="./img/svg/phone.svg" alt="Иконка: Телефон">
+					<a href="tel:+74872353438">+7 (4872) 35-34-38</a>
+				</div>
+				<div class="info__item mail">
+					<img src="./img/svg/mail.svg" alt="Иконка: Почта">
+					<a href="mailto:tbs_sgb@tularegion.org">tbs_sgb@tularegion.org</a>
+				</div>
+				<div class="info__item place">
+					<img src="./img/svg/gps.svg" alt="Иконка: GPS">
+					<span>г. Тула, ул. Болдина 149/10</span>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- /.container -->
 </section>
 <!-- ABOUT END -->
+		</div>
 	</main>
 	<!-- FOOTER START -->
 <footer class="footer">
@@ -365,12 +352,12 @@
 				</div>
 				<a href="/" class="footer-btn link-btn">Задать вопрос</a>
 				<div class="footer__socials">
-					<a href="/" class="footer__socials-item"><picture><source srcset="./img/vk.webp" type="image/webp"><img src="./img/vk.png" alt="Иконка: VK"></picture></a>
+					<a href="/" class="footer__socials-item"><img src="./img/vk.png" alt="Иконка: VK"></a>
 					<a href="/" class="footer__socials-item">
-						<picture><source srcset="./img/teleg.webp" type="image/webp"><img src="./img/teleg.png" alt="Иконка: Telegram"></picture>
+						<img src="./img/teleg.png" alt="Иконка: Telegram">
 					</a>
 					<a href="/" class="footer__socials-item">
-						<picture><source srcset="img/youtube.webp" type="image/webp"><img src="img/youtube.png" alt="Иконка: Youtube"></picture>
+						<img src="img/youtube.png" alt="Иконка: Youtube">
 					</a>
 				</div>
 			</div>
@@ -388,7 +375,7 @@
 	<!-- /.container -->
 </footer>
 <!-- FOOTER END -->
-	<script src="js/app.min.js?_v=20220627193737"></script>
+	<script src="js/app.min.js"></script>
 </body>
 
 </html>

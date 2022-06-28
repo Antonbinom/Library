@@ -3,9 +3,11 @@
 <body>
 	@@include('html/header.html',{})
 	<main class="partners">
-		@@include('html/breadcrumb.html',{ "page":"Партнеры" })
-		@@include('html/title.html',{"title":"Партнеры","class":"partners-title"})
-		@@include('html/components/partners/main.html',{})
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Партнеры" })
+			@@include('html/title.html',{"title":"Партнеры","class":"partners-title"})
+			@@include('html/components/partners/main.html',{})
+		</div>
 	</main>
 	@@include('html/footer.html',{})
 	<script src="js/app.min.js"></script>

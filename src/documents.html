@@ -3,9 +3,11 @@
 <body>
 	@@include('html/header.html',{})
 	<main class="documents">
-		@@include('html/breadcrumb.html',{ "page":"Документы" })
-		@@include('html/title.html',{"title":"Документы","class":"documents-title"})
-		@@include('html/components/documents/main.html',{})
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Документы" })
+			@@include('html/title.html',{"title":"Документы","class":"documents-title"})
+			@@include('html/components/documents/main.html',{})
+		</div>
 	</main>
 	@@include('html/footer.html',{})
 	<script src="js/app.min.js"></script>

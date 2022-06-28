@@ -2,11 +2,13 @@
 
 <body>
 	@@include('html/header.html',{})
-	@@include('html/breadcrumb.html',{ "page":"Администрация" })
 	<main class="admin">
-		@@include('html/title.html',{"title":"Администрация", "class":"admin-title"})
-		@@include('html/components/admin/main.html',{})
-		@@include('html/components/admin/team.html',{})
+		<div class="container">
+			@@include('html/breadcrumb.html',{ "page":"Администрация" })
+			@@include('html/title.html',{"title":"Администрация", "class":"admin-title"})
+			@@include('html/components/admin/main.html',{})
+			@@include('html/components/admin/team.html',{})
+		</div>
 	</main>
 	@@include('html/footer.html',{})
 	<script src="js/app.min.js"></script>
