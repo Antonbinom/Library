@@ -35,7 +35,7 @@ export const swipers = () => {
   const swiperBrands = new Swiper('.swiper.brands__slider', {
     modules: [Navigation, Pagination],
     loop: true,
-    spaceBetween: 5,
+    // spaceBetween: 55,
     breakpoints: {
       576: {
         slidesPerView: 1,
@@ -45,6 +45,7 @@ export const swipers = () => {
       },
       991: {
         slidesPerView: 3,
+        // spaceBetween: 20,
       },
       1200: {
         slidesPerView: 4,
