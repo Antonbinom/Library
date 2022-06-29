@@ -1009,6 +1009,10 @@ select {
   color: #B6B6B6;
 }
 
+input {
+  cursor: auto;
+}
+
 h1,
 h2,
 h3,
@@ -3257,6 +3261,10 @@ template {
   line-height: 17px;
 }
 
+.footer__info {
+  margin-right: 30px;
+}
+
 .footer__contacts {
   margin-right: 95px;
   font-weight: 400;
@@ -3370,6 +3378,10 @@ template {
 @media (max-width: 1200px) {
   .header__nav-item {
     font-size: 14px;
+  }
+
+  .footer__contacts {
+    margin-right: 0;
   }
 
   .events {
@@ -3493,6 +3505,10 @@ template {
   .footer__wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .footer__info {
+    margin-right: 0px;
   }
 
   .footer__banner {

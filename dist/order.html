@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/style.min.css?_v=20220629224753" />
   <title>Заказать литературу</title>
 </head>
 
@@ -17,7 +17,7 @@
 		<!-- HEADER-TOP START -->
 <div class="header__top">
 	<a href="index.html" class="header-logo">
-		<img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></a>
+		<picture><source srcset="./img/logo.webp" type="image/webp"><img src="./img/logo.png" alt="Logo: Тульская Библиотечная Система"></picture></a>
 	<div class="header__search">
 		<form action="#" class="header__search">
 			<input type="text" class="header__search-input" placeholder="Введите запрос для поиска">
@@ -232,29 +232,29 @@
 			<h1 class="title order-title">Заказать литературу</h1>
 			<section class="order__form form__wrapper">
 	<h2 class="order__form-title form-title section-title">Форма для предварительного заказа литературы</h2>
-	<form class="form" action="">
+	<form class="form" action="POST">
 		<div class="form__input form__input-surname">
-			<label class="input-label" for="surname">Фамилия <span>*</span></label>
+			<label class="input-label">Фамилия <span>*</span></label>
 			<input type="text" name="surname" required>
 		</div>
 		<div class="form__input form__input-name">
-			<label class="input-label" for="name">Имя&nbsp;<span>*</span></label>
+			<label class="input-label">Имя&nbsp;<span>*</span></label>
 			<input type="text" name="name" required>
 		</div>
 		<div class="form__input form__input-patronym">
-			<label class="input-label" for="patronym">Отчество&nbsp;<span>*</span></label>
+			<label class="input-label">Отчество&nbsp;<span>*</span></label>
 			<input type="text" name="patronym" required>
 		</div>
 		<div class="form__input form__input-email">
-			<label class="input-label" for="email">Эл. почта&nbsp;<span>*</span></label>
+			<label class="input-label">Эл. почта&nbsp;<span>*</span></label>
 			<input type="text" name="email" required>
 		</div>
 		<div class="form__input form__input-phone">
-			<label class="input-label" for="phone">Телефон&nbsp;<span>*</span></label>
+			<label class="input-label">Телефон&nbsp;<span>*</span></label>
 			<input type="text" name="phone" required>
 		</div>
 		<div class="form__input form__input-books">
-			<label class="input-label" for="book">Мне необходиы следующие книги: <br>
+			<label class="input-label">Мне необходиы следующие книги: <br>
 				Укажите автора и название, список должен содержать не более 5 наименований)&nbsp;<span>*</span></label>
 			<input type="text" name="book" required>
 			<input type="text" name="book" required>
@@ -311,12 +311,12 @@
 				</div>
 				<a href="question.html" class="footer-btn link-btn">Задать вопрос</a>
 				<div class="footer__socials">
-					<a href="/" class="footer__socials-item"><img src="./img/vk.png" alt="Иконка: VK"></a>
+					<a href="/" class="footer__socials-item"><picture><source srcset="./img/vk.webp" type="image/webp"><img src="./img/vk.png" alt="Иконка: VK"></picture></a>
 					<a href="/" class="footer__socials-item">
-						<img src="./img/teleg.png" alt="Иконка: Telegram">
+						<picture><source srcset="./img/teleg.webp" type="image/webp"><img src="./img/teleg.png" alt="Иконка: Telegram"></picture>
 					</a>
 					<a href="/" class="footer__socials-item">
-						<img src="img/youtube.png" alt="Иконка: Youtube">
+						<picture><source srcset="img/youtube.webp" type="image/webp"><img src="img/youtube.png" alt="Иконка: Youtube"></picture>
 					</a>
 				</div>
 			</div>
@@ -334,7 +334,7 @@
 	<!-- /.container -->
 </footer>
 <!-- FOOTER END -->
-	<script src="js/app.min.js"></script>
+	<script src="js/app.min.js?_v=20220629224753"></script>
 </body>
 
 </html>

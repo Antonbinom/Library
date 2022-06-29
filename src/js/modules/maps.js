@@ -1,6 +1,15 @@
 export const maps = () => {
   const removeDefoultMarkers = (map, geo) => {
-    const placemark = new ymaps.Placemark(geo, {}, {});
+    const placemark = new ymaps.Placemark(
+      geo,
+      {},
+      {
+        iconLayout: 'default#image',
+        iconImageHref: '/img/yamap.png',
+        iconImageSize: [50, 50],
+        iconImageOffset: [0, 0],
+      }
+    );
     const mapControls = [
       'geolocationControl',
       'fullscreenControl',
