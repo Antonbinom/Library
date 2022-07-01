@@ -1493,13 +1493,15 @@ template {
 }
 
 .breadcrumb {
-  padding: 30px 0 39px;
+  padding: 30px 0 34px;
 }
 
 .breadcrumb__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-left: 0;
   margin: 0;
   font-weight: 500;
@@ -1509,13 +1511,17 @@ template {
   list-style-type: none;
 }
 
-.breadcrumb__list-item:not(:first-child)::before {
+.breadcrumb__list-item {
+  margin-bottom: 5px;
+}
+
+.breadcrumb__list-item:not(:last-child)::after {
   content: "/";
   margin-right: 6px;
   margin-left: 6px;
 }
 
-.breadcrumb-main {
+.breadcrumb-main a {
   text-decoration: underline;
 }
 
@@ -1702,6 +1708,12 @@ template {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  background: url("../img/svg/select-arrow.svg") no-repeat center right 16px;
+  background-color: #fff;
 }
 
 .form-btn {
@@ -1806,7 +1818,7 @@ template {
 
 .create .form__input-title {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .create .form__input-photo {
@@ -1899,14 +1911,8 @@ template {
   margin-left: auto;
 }
 
-.create select {
+.create .form__select {
   margin-bottom: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  overflow: hidden;
-  background: url("../img/svg/select-arrow.svg") no-repeat center right 16px;
-  background-color: #fff;
 }
 
 .books {
@@ -2699,10 +2705,6 @@ template {
   text-align: center;
 }
 
-.admin-title {
-  text-align: center;
-}
-
 .admin-fullname {
   display: inline-block;
   margin-bottom: 23px;
@@ -2730,6 +2732,10 @@ template {
 
 .admin-text {
   font-weight: 400;
+}
+
+.admin .title {
+  text-align: center;
 }
 
 .admin__team-wrapper {
@@ -3711,7 +3717,7 @@ template {
   }
 
   .breadcrumb {
-    padding-bottom: 49px;
+    padding-bottom: 44px;
     padding-top: 0;
   }
 

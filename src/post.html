@@ -1,11 +1,19 @@
-@@include('html/head.html',{ "title":"Новости" })
+@@include('html/head.html',{ "title":"Масленица весела - всех на игры увела" })
 
 <body>
 	@@include('html/header.html',{})
 	<main class="post">
 		<div class="container">
-			@@include('html/breadcrumb.html',{ "page":"Новости" })
-			@@include('html/title.html',{"title":"Масленица весела - всех на игры увела", "class":"post-title"
+			<!-- BREADCRUMB START -->
+			<nav class="breadcrumb">
+				<ul class="breadcrumb__list">
+					<li class="breadcrumb__list-item"><a href="index.html">Главная</a></li>
+					<li class="breadcrumb__list-item breadcrumb-main"><a href="index.html">Новости</a></li>
+					<li class="breadcrumb__list-item active">Масленица весела - всех на игры увела</li>
+				</ul>
+			</nav>
+			<!-- BREADCRUMB END -->
+			@@include('html/title.html',{"title":"Масленица весела - всех на игры увела"
 			})
 			@@include('html/components/post/about.html',{})
 			@@include('html/components/post/map.html',{})

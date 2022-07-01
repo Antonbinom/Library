@@ -39,6 +39,10 @@
 		font-weight: 500
 		font-size: 12px
 		line-height: 15px
+		appearance: none
+		overflow: hidden
+		background: url('../img/svg/select-arrow.svg') no-repeat center right 16px
+		background-color: #fff
 	&-btn
 		display: block
 		padding: 10px 25px
@@ -100,7 +104,7 @@
 		&__input
 			&-title
 				width: 100%
-				margin-bottom: 20px
+				margin-bottom: 24px
 			&-photo
 				margin-right: 64px
 			&-letters
@@ -145,15 +149,11 @@
 				width: 130px
 				height: 159px
 				margin-bottom: 0
-	.form-btn
-		display: inline-block
-		width: max-content
-		height: max-content
-		margin: 0
-		margin-left: auto
-	& select
-		margin-bottom: 0
-		appearance: none
-		overflow: hidden
-		background: url('../img/svg/select-arrow.svg') no-repeat center right 16px
-		background-color: #fff
+		&-btn
+			display: inline-block
+			width: max-content
+			height: max-content
+			margin: 0
+			margin-left: auto
+		&__select
+			margin-bottom: 0
